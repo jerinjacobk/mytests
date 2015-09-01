@@ -50,7 +50,7 @@ static INLINE __m128i _mm_unpackhi_epi64 (__m128i a, __m128i b)
         asm volatile(
                 "mov %[out].D[0], %[a].D[1]" "\n\t"
                 "mov %[out].D[1], %[b].D[1]" "\n\t"
-                :[out]"=&w"(out)
+                :[out]"=w"(out)
                 :[a]"w"(a),[b]"w"(b)
                 );
         return out;
