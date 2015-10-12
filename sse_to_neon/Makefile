@@ -10,5 +10,7 @@ o2:
 static:
 	aarch64-thunderx-linux-gnu-gcc test.c -O3 -g --static  && aarch64-thunderx-linux-gnu-objdump -D a.out > log.txt
 
+x0:
+	gcc -O0 -g -msse4 test.c && objdump -D a.out > log.txt
 x86:
-	gcc -O3 -g test.c && objdump -D a.out > log.txt
+	gcc -O3 -g -msse4 test.c && objdump -D a.out > log.txt

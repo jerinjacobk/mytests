@@ -88,13 +88,33 @@ static INLINE __m128i _mm_unpackhi_epi64 (__m128i a, __m128i b)
 
 #endif
 
-void print128_s16_num(__m128i var)
+
+void print128_u16_num(__m128i var)
 {
 	uint16_t *val = (uint16_t*) &var;
-	printf("Numerical: %i %i %i %i %i %i %i %i \n",
-           val[0], val[1], val[2], val[3], val[4], val[5],
-           val[6], val[7]);
+	printf("u16: %i %i %i %i %i %i %i %i \n",
+           val[7], val[6], val[5], val[4], val[3], val[2],
+           val[1], val[0]);
 }
+
+void print128_u8_num(__m128i var)
+{
+	uint8_t *val = (uint8_t*) &var;
+	printf("u8: %i %i %i %i %i %i %i %i %i %i %i %i %i %i %i %i\n",
+           val[15], val[14], val[13], val[12], val[11], val[10],
+           val[9], val[8], val[7], val[6], val[5], val[4],
+	   val[3], val[2], val[1], val[0]);
+}
+
+void print128_s8_num(__m128i var)
+{
+	int8_t *val = (uint8_t*) &var;
+	printf("s8: %i %i %i %i %i %i %i %i %i %i %i %i %i %i %i %i\n",
+           val[15], val[14], val[13], val[12], val[11], val[10],
+           val[9], val[8], val[7], val[6], val[5], val[4],
+	   val[3], val[2], val[1], val[0]);
+}
+
 void print128_num(__m128i var)
 {
 	int64_t *v64val = (int64_t*) &var;
@@ -103,11 +123,13 @@ void print128_num(__m128i var)
 
 int main()
 {
+#if 0
 	__m128i var;
 	__m128i a;
 	__m128i b;
 	var = _mm_set_epi64x(0xdeadbeef, 0x12345678);
 	print128_num(var);
+
 	var = _mm_setzero_si128();
 	print128_num(var);
 
@@ -117,7 +139,22 @@ int main()
 	print128_num(b);
 	var = _mm_unpackhi_epi64(a, b);
 	print128_num(var);
+#else
+	__m128i var;
+	__m128i mask;
+	__m128i res;
 
+#if 0
+	var = _mm_set_epi64x(0x0001020304050607, 0x08090a0b0c0d0e0f);
+	mask = _mm_set_epi64x(0x8080808080808080, 0x8080808080808001);
+	res = _mm_shuffle_epi8(var, mask);
+#endif
+#if 1
+	var = _mm_set_epi64x(0xFF00000000000000, 0x070000000f000000);
+	res = _mm_srli_epi32(var, 30);
+#endif
+	print128_num(res);
+#endif
 	return 0;
 }
 
