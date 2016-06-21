@@ -121,7 +121,7 @@ void print128_num(__m128i var)
 	printf("%.16llx %.16llx\n", v64val[1], v64val[0]);
 }
 
-int main()
+void test0(void)
 {
 #if 0
 	__m128i var;
@@ -140,21 +140,32 @@ int main()
 	var = _mm_unpackhi_epi64(a, b);
 	print128_num(var);
 #else
-	__m128i var;
-	__m128i mask;
-	__m128i res;
 
 #if 0
 	var = _mm_set_epi64x(0x0001020304050607, 0x08090a0b0c0d0e0f);
 	mask = _mm_set_epi64x(0x8080808080808080, 0x8080808080808001);
 	res = _mm_shuffle_epi8(var, mask);
 #endif
-#if 1
+#if 0
 	var = _mm_set_epi64x(0xFF00000000000000, 0x070000000f000000);
 	res = _mm_srli_epi32(var, 30);
 #endif
-	print128_num(res);
 #endif
+}
+
+void test1(void)
+{
+	__m128i var;
+	__m128i mask;
+	__m128i res;
+
+	print128_num(res);
+
+}
+
+int main()
+{
+	test1();
 	return 0;
 }
 
