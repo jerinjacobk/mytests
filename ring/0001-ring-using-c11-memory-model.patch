@@ -1,0 +1,124 @@
+From 361297f361e97f782d63f3b4e849bdb7aa0412ce Mon Sep 17 00:00:00 2001
+From: Jerin Jacob <jerin.jacob@caviumnetworks.com>
+Date: Tue, 31 Oct 2017 09:57:30 +0000
+Subject: [PATCH] ring: using c11 memory model
+
+Signed-off-by: Jerin Jacob <jerin.jacob@caviumnetworks.com>
+---
+ lib/librte_ring/rte_ring.h | 51 +++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 50 insertions(+), 1 deletion(-)
+
+diff --git a/lib/librte_ring/rte_ring.h b/lib/librte_ring/rte_ring.h
+index 5e9b3b7..9235849 100644
+--- a/lib/librte_ring/rte_ring.h
++++ b/lib/librte_ring/rte_ring.h
+@@ -408,8 +408,13 @@ __rte_ring_move_prod_head(struct rte_ring *r, int is_sp,
+ 		/* Reset n to the initial burst count */
+ 		n = max;
+ 
++#if 0
+ 		*old_head = r->prod.head;
+ 		const uint32_t cons_tail = r->cons.tail;
++#else
++		 *old_head  = __atomic_load_n(&r->prod.head, __ATOMIC_RELAXED); 
++		const uint32_t cons_tail = __atomic_load_n(&r->cons.tail, __ATOMIC_ACQUIRE);
++#endif
+ 		/*
+ 		 *  The subtraction is done between two unsigned 32bits value
+ 		 * (the result is always modulo 32 bits even if we have
+@@ -430,8 +435,17 @@ __rte_ring_move_prod_head(struct rte_ring *r, int is_sp,
+ 		if (is_sp)
+ 			r->prod.head = *new_head, success = 1;
+ 		else
++#if 0
+ 			success = rte_atomic32_cmpset(&r->prod.head,
+ 					*old_head, *new_head);
++#else
++			success = __atomic_compare_exchange_n(&r->prod.head,
++					      old_head,
++					      *new_head,
++					      0/*strong*/,
++					      __ATOMIC_ACQUIRE,
++					      __ATOMIC_RELAXED);
++#endif
+ 	} while (unlikely(success == 0));
+ 	return n;
+ }
+@@ -470,9 +484,20 @@ __rte_ring_do_enqueue(struct rte_ring *r, void * const *obj_table,
+ 		goto end;
+ 
+ 	ENQUEUE_PTRS(r, &r[1], prod_head, obj_table, n, void *);
++#if 0
+ 	rte_smp_wmb();
+ 
+ 	update_tail(&r->prod, prod_head, prod_next, is_sp);
++#else
++	if (!is_sp) {
++        while (unlikely(__atomic_load_n(&r->prod.tail, __ATOMIC_RELAXED) !=
++                            prod_head))
++                rte_pause();
++	}
++
++        /* Release our entries and the memory they refer to */
++        __atomic_store_n(&r->prod.tail, prod_next, __ATOMIC_RELEASE);
++#endif
+ end:
+ 	if (free_space != NULL)
+ 		*free_space = free_entries - n;
+@@ -516,8 +541,13 @@ __rte_ring_move_cons_head(struct rte_ring *r, int is_sc,
+ 		/* Restore n as it may change every loop */
+ 		n = max;
+ 
++#if 0
+ 		*old_head = r->cons.head;
+ 		const uint32_t prod_tail = r->prod.tail;
++#else
++		*old_head = __atomic_load_n(&r->cons.head, __ATOMIC_RELAXED);
++		const uint32_t prod_tail = __atomic_load_n(&r->prod.tail, __ATOMIC_ACQUIRE);
++#endif
+ 		/* The subtraction is done between two unsigned 32bits value
+ 		 * (the result is always modulo 32 bits even if we have
+ 		 * cons_head > prod_tail). So 'entries' is always between 0
+@@ -535,8 +565,18 @@ __rte_ring_move_cons_head(struct rte_ring *r, int is_sc,
+ 		if (is_sc)
+ 			r->cons.head = *new_head, success = 1;
+ 		else
++#if 0
+ 			success = rte_atomic32_cmpset(&r->cons.head, *old_head,
+ 					*new_head);
++
++#else
++			success = __atomic_compare_exchange_n(&r->cons.head,
++						old_head,
++						*new_head,
++						0/*strong*/,
++						__ATOMIC_ACQUIRE,
++						__ATOMIC_RELAXED);
++#endif
+ 	} while (unlikely(success == 0));
+ 	return n;
+ }
+@@ -575,10 +615,19 @@ __rte_ring_do_dequeue(struct rte_ring *r, void **obj_table,
+ 		goto end;
+ 
+ 	DEQUEUE_PTRS(r, &r[1], cons_head, obj_table, n, void *);
++#if 0
+ 	rte_smp_rmb();
+-
+ 	update_tail(&r->cons, cons_head, cons_next, is_sc);
++#else
++	if (!is_sc) {
++        while (unlikely(__atomic_load_n(&r->cons.tail, __ATOMIC_RELAXED) != 
++                        cons_head))
++                rte_pause();
++	}
+ 
++        /* Release our entries and the memory they refer to */
++        __atomic_store_n(&r->cons.tail, cons_next, __ATOMIC_RELEASE);
++#endif
+ end:
+ 	if (available != NULL)
+ 		*available = entries - n;
+-- 
+2.7.4
+
