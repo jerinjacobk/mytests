@@ -107,7 +107,7 @@ result_checker(uint32_t flowkey_cfg, int expect_error,
 	return 0;
 }
 
-//#define GENERATE_TESTCASE
+#define GENERATE_TESTCASE
 #ifdef GENERATE_TESTCASE
 static int
 PORT(void)
@@ -248,19 +248,22 @@ int main(void)
 
 #ifdef GENERATE_TESTCASE
 	uint32_t mask, i, cidx, cidx2, bit;
-	int result, rc;
-	char str[400], str2[100];
+	int result, rc, cnt;
+	char str[400], str2[400];
 	for (mask = (1 << (MAX_BIT + 1)) - 1; mask > 0; mask--) {
 		int fields, last_key_off;
 
 		i = mask;
-		cidx = 0;
+		cidx = cnt = 0;
 		cidx2 = snprintf(str2, sizeof(str2), "static int\n");
 		while (i) {
+			cnt++;
 			bit = ffs(i) - 1;
 			i = i & ~BIT_ULL(bit);
 			rc = snprintf(&str[cidx], sizeof(str) - cidx,
-				      "%s%s", proto_strings[bit][1], i ? "|" : ",");
+				      "%s%s", proto_strings[bit][1],
+				      i ? (cnt % 2 ? "|\n\t\t\t      " :"|") :
+				      ",");
 			if (rc > 0)
 				cidx += rc;
 			rc = snprintf(&str2[cidx2], sizeof(str2) - cidx2,
@@ -273,17 +276,17 @@ int main(void)
 		result = result_checker(mask, 0, 5, 42, &fields, &last_key_off);
 		if (result < 0)
 			fprintf(stderr,
-				"\treturn result_checker(%s 1, 5, 42, "
+				"\treturn result_checker(%s\n\t\t\t      1, 5, 42, "
 				"NULL, NULL); //[%x], fail\n",
 				str, mask);
 		else if (result > 0)
 			fprintf(stderr,
-				"\treturn result_checker(%s 0, %d, %d, "
+				"\treturn result_checker(%s\n\t\t\t      0, %d, %d, "
 				"NULL, NULL); //[%x], would pass!!\n",
 			       str, fields, last_key_off, mask);
 		else
 			fprintf(stderr,
-				"\treturn result_checker(%s 0, 5, 42, "
+				"\treturn result_checker(%s\n\t\t\t      0, 5, 42, "
 				"NULL, NULL); //[%x] passed!!\n",
 				str, mask);
 		fprintf(stderr, "}\n\n");
