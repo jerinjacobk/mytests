@@ -18,10 +18,10 @@ otx2_run_tests(struct otx2_test *tests, int nr_tests)
 		test->result = test->fn();
 		if (test->result) {
 			++failed;
-			printf("\t[%d]%-*s:"CLRED"%s"CLNRM" rc=%d\n", i,
+			printf("\t[%2d]%-*s:"CLRED"%s"CLNRM" rc=%d\n", i,
 			OTX2_TEST_NAME_MAX, test->name, str_fail, test->result);
 		} else {
-			printf("\t[%d]%-*s:"CLGRN"%s"CLNRM"\n", i,
+			printf("\t[%2d]%-*s:"CLGRN"%s"CLNRM"\n", i,
 			OTX2_TEST_NAME_MAX, test->name, str_success);
 		}
 	}
