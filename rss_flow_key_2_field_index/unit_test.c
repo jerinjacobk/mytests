@@ -102,6 +102,12 @@ result_checker(uint32_t flowkey_cfg, int expect_error,
 }
 
 static int
+PORT(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT, 0, 1, 0);
+}
+
+static int
 IPV4__IPV6(void)
 {
 	return result_checker(FLOW_KEY_TYPE_IPV4 | FLOW_KEY_TYPE_IPV6, 0, 2, 0);
@@ -167,7 +173,14 @@ NVGRE_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_NVGRE | FLOW_KEY_TYPE_VXLAN | FLOW_KEY_TYPE_GENEVE, 0, 3, 6);
 }
 
+static int
+PORT_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT | FLOW_KEY_TYPE_NVGRE | FLOW_KEY_TYPE_VXLAN | FLOW_KEY_TYPE_GENEVE, 0, 4, 8);
+}
+
 struct otx2_test unit_tests[] = {
+	OTX2_TEST(PORT),
 	OTX2_TEST(IPV4__IPV6),
 	OTX2_TEST(IPV4__IPV6__TCP),
 	OTX2_TEST(IPV4__IPV6__UDP),
@@ -179,6 +192,7 @@ struct otx2_test unit_tests[] = {
 	OTX2_TEST(IPV4__IPV6__TCP__UDP__NVGRE),
 	OTX2_TEST(PORT_IPV4__IPV6__TCP__UDP__NVGRE),
 	OTX2_TEST(NVGRE_VXLAN_GENEVE),
+	OTX2_TEST(PORT_NVGRE_VXLAN_GENEVE),
 };
 
 
