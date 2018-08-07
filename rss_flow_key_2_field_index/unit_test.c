@@ -149,6 +149,12 @@ IPV4__IPV6__TCP__UDP__SCTP(void)
 	return result_checker(FLOW_KEY_TYPE_IPV4 | FLOW_KEY_TYPE_IPV6 | FLOW_KEY_TYPE_TCP | FLOW_KEY_TYPE_UDP | FLOW_KEY_TYPE_SCTP, 0, 3, 32);
 }
 
+static int
+IPV4__IPV6__TCP__UDP__NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4 | FLOW_KEY_TYPE_IPV6 | FLOW_KEY_TYPE_TCP | FLOW_KEY_TYPE_UDP | FLOW_KEY_TYPE_NVGRE, 0, 4, 36);
+}
+
 struct otx2_test unit_tests[] = {
 	OTX2_TEST(IPV4__IPV6),
 	OTX2_TEST(IPV4__IPV6__TCP),
@@ -158,6 +164,7 @@ struct otx2_test unit_tests[] = {
 	OTX2_TEST(IPV4__IPV6__TCP__SCTP),
 	OTX2_TEST(IPV4__IPV6__UDP__SCTP),
 	OTX2_TEST(IPV4__IPV6__TCP__UDP__SCTP),
+	OTX2_TEST(IPV4__IPV6__TCP__UDP__NVGRE),
 };
 
 

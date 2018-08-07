@@ -3,7 +3,7 @@
 #include <string.h>
 #include <errno.h>
 #include <stdbool.h>
-#include <inttypes.h> 
+#include <inttypes.h>
 
 #include "common.h"
 
@@ -69,9 +69,9 @@ int
 set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 {
 	int idx, nr_field, key_off, field_marker, keyoff_marker;
+	int max_key_off, max_bit_pos, group_member;
 	struct nix_rx_flowkey_alg *field;
 	struct nix_rx_flowkey_alg tmp;
-	int max_key_off, max_bit_pos;
 	uint32_t key_type, valid_key;
 
 #define FIELDS_PER_ALG  5
@@ -93,8 +93,9 @@ set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 	 * point to this definition to calculate flowtag or hash.
 	 */
 
-	nr_field = 0; key_off = 0; field_marker = 1; keyoff_marker = 0;
-	max_key_off = 0; field = &tmp; max_bit_pos = fls(flow_cfg);
+	keyoff_marker = 0; max_key_off = 0; group_member = 0;
+	nr_field = 0; key_off = 0; field_marker = 1;
+	field = &tmp; max_bit_pos = fls(flow_cfg);
 	for (idx = 0; idx < max_bit_pos && nr_field < FIELDS_PER_ALG &&
 			key_off < MAX_KEY_OFF; idx++) {
 
@@ -135,14 +136,27 @@ set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 		case FLOW_KEY_TYPE_SCTP:
 			field->lid = NPC_LID_LD;
 			field->bytesm1 = 3; /* Sport + Dport, 4 bytes */
-			if (key_type == FLOW_KEY_TYPE_TCP && valid_key)
+			if (key_type == FLOW_KEY_TYPE_TCP && valid_key) {
 				field->ltype_match |= NPC_LT_LD_TCP;
-			else if (key_type == FLOW_KEY_TYPE_UDP && valid_key)
+				group_member = true;
+			}
+			else if (key_type == FLOW_KEY_TYPE_UDP && valid_key) {
 				field->ltype_match |= NPC_LT_LD_UDP;
-			else if (key_type == FLOW_KEY_TYPE_SCTP && valid_key)
+				group_member = true;
+			}
+			else if (key_type == FLOW_KEY_TYPE_SCTP && valid_key) {
 				field->ltype_match |= NPC_LT_LD_SCTP;
+				group_member = true;
+			}
 			field->ltype_mask = ~field->ltype_match;
 			if (key_type == FLOW_KEY_TYPE_SCTP) {
+				/* Handle the case where any of the group item
+				 * is enabled in the group but not the final one
+				*/
+				if (group_member == true) {
+					valid_key = true;
+					group_member = false;
+				}
 				field_marker = true;
 				keyoff_marker = true;
 			} else {
