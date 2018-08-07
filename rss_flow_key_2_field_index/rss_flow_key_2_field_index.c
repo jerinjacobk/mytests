@@ -5,6 +5,8 @@
 #include <stdbool.h>
 #include <inttypes.h> 
 
+#include "common.h"
+
 #define RTE_MAX(a, b) \
 	__extension__ ({ \
 		typeof (a) _a = (a); \
@@ -14,20 +16,6 @@
 
 #define NIX_AF_ERR_RSS_NOSPC_FIELD  -415
 
-#ifndef BIT_ULL
-#define BIT_ULL(nr) (1ULL << (nr))
-#endif
-#ifndef BIT
-#define BIT(nr)     (1UL << (nr))
-#endif
-
-#define FLOW_KEY_TYPE_PORT     BIT(0)
-#define FLOW_KEY_TYPE_IPV4     BIT(1)
-#define FLOW_KEY_TYPE_IPV6     BIT(2)
-#define FLOW_KEY_TYPE_TCP      BIT(3)
-#define FLOW_KEY_TYPE_UDP      BIT(4)
-#define FLOW_KEY_TYPE_SCTP     BIT(5)
-#define FLOW_KEY_TYPE_NVGRE    BIT(6)
 
 enum npc_lid_e {
 	NPC_LID_LA = 0,
@@ -65,36 +53,6 @@ enum npc_kpu_ld_ltype {
 	NPC_LT_LD_NVGRE,
 };
 
-struct nix_rx_flowkey_alg {
-#if defined(__BIG_ENDIAN_BITFIELD)
-	uint64_t reserved_35_63  :29;
-	uint64_t ltype_match     :4;
-	uint64_t ltype_mask      :4;
-	uint64_t sel_chan        :1;
-	uint64_t ena         :1;
-	uint64_t reserved_24_24  :1;
-	uint64_t lid         :3;
-	uint64_t bytesm1     :5;
-	uint64_t hdr_offset      :8;
-	uint64_t fn_mask     :1;
-	uint64_t ln_mask     :1;
-	uint64_t key_offset      :6;
-#else
-	uint64_t key_offset      :6;
-	uint64_t ln_mask     :1;
-	uint64_t fn_mask     :1;
-	uint64_t hdr_offset      :8;
-	uint64_t bytesm1     :5;
-	uint64_t lid         :3;
-	uint64_t reserved_24_24  :1;
-	uint64_t ena         :1;
-	uint64_t sel_chan        :1;
-	uint64_t ltype_mask      :4;
-	uint64_t ltype_match     :4;
-	uint64_t reserved_35_63  :29;
-#endif
-};
-
 static inline int fls(uint32_t x)
 {
 	int b;
@@ -107,7 +65,7 @@ static inline int fls(uint32_t x)
 	return 0;
 }
 
-static int
+int
 set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 {
 	int idx, nr_field, key_off, field_marker, keyoff_marker;
@@ -226,91 +184,4 @@ set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 		return 0;
 	else
 		return NIX_AF_ERR_RSS_NOSPC_FIELD;
-}
-
-static void print_feilds(uint64_t *field)
-{
-	int i;
-
-	for (i = 0; i < FIELDS_PER_ALG; i++)
-		printf("field=%"PRIx64"\n", field[i]);
-
-
-}
-
-int main(void)
-{
-	int rc;
-	uint64_t field[FIELDS_PER_ALG];
-
-	uint32_t flowkey_cfg, minkey_cfg;
-
-	/* IPv4/IPv6 SIP/DIPs */
-	flowkey_cfg = FLOW_KEY_TYPE_IPV4 | FLOW_KEY_TYPE_IPV6;
-	rc = set_flowkey_fields((struct nix_rx_flowkey_alg *)field, flowkey_cfg);
-	if (rc < 0)
-		return rc;
-
-	print_feilds(field);
-
-	/* TCPv4/v6 4-tuple, SIP, DIP, Sport, Dport */
-	minkey_cfg = flowkey_cfg;
-	flowkey_cfg = minkey_cfg | FLOW_KEY_TYPE_TCP;
-	rc = set_flowkey_fields((struct nix_rx_flowkey_alg *)field, flowkey_cfg);
-	if (rc < 0)
-		return rc;
-
-	print_feilds(field);
-	/* UDPv4/v6 4-tuple, SIP, DIP, Sport, Dport */
-	flowkey_cfg = minkey_cfg | FLOW_KEY_TYPE_UDP;
-	rc = set_flowkey_fields((struct nix_rx_flowkey_alg *)field, flowkey_cfg);
-	if (rc < 0)
-		return rc;
-
-	print_feilds(field);
-	/* SCTPv4/v6 4-tuple, SIP, DIP, Sport, Dport */
-	flowkey_cfg = minkey_cfg | FLOW_KEY_TYPE_SCTP;
-	rc = set_flowkey_fields((struct nix_rx_flowkey_alg *)field, flowkey_cfg);
-	if (rc < 0)
-		return rc;
-
-	print_feilds(field);
-	/* TCP/UDP v4/v6 4-tuple, rest IP pkts 2-tuple */
-	flowkey_cfg = minkey_cfg | FLOW_KEY_TYPE_TCP | FLOW_KEY_TYPE_UDP;
-	rc = set_flowkey_fields((struct nix_rx_flowkey_alg *)field, flowkey_cfg);
-	if (rc < 0)
-		return rc;
-
-	print_feilds(field);
-	/* TCP/SCTP v4/v6 4-tuple, rest IP pkts 2-tuple */
-	flowkey_cfg = minkey_cfg | FLOW_KEY_TYPE_TCP | FLOW_KEY_TYPE_SCTP;
-	rc = set_flowkey_fields((struct nix_rx_flowkey_alg *)field, flowkey_cfg);
-	if (rc < 0)
-		return rc;
-
-	print_feilds(field);
-	/* UDP/SCTP v4/v6 4-tuple, rest IP pkts 2-tuple */
-	flowkey_cfg = minkey_cfg | FLOW_KEY_TYPE_UDP | FLOW_KEY_TYPE_SCTP;
-	rc = set_flowkey_fields((struct nix_rx_flowkey_alg *)field, flowkey_cfg);
-	if (rc < 0)
-		return rc;
-
-	print_feilds(field);
-	/* TCP/UDP/SCTP v4/v6 4-tuple, rest IP pkts 2-tuple */
-	flowkey_cfg = minkey_cfg | FLOW_KEY_TYPE_TCP |
-					FLOW_KEY_TYPE_UDP | FLOW_KEY_TYPE_SCTP;
-	rc = set_flowkey_fields((struct nix_rx_flowkey_alg *)field, flowkey_cfg);
-	if (rc < 0)
-		return rc;
-	print_feilds(field);
-
-	/* TCP/UDP/SCTP/NVGRE v4/v6 4-tuple, rest IP pkts 2-tuple */
-	flowkey_cfg = minkey_cfg | FLOW_KEY_TYPE_TCP |
-					FLOW_KEY_TYPE_UDP | FLOW_KEY_TYPE_SCTP | FLOW_KEY_TYPE_NVGRE;
-	rc = set_flowkey_fields((struct nix_rx_flowkey_alg *)field, flowkey_cfg);
-	if (rc < 0)
-		return rc;
-
-	print_feilds(field);
-	return 0;
 }
