@@ -15,10 +15,7 @@ otx2_run_tests(struct otx2_test *tests, int nr_tests)
 	for (i = 0; i < nr_tests; i++) {
 		struct otx2_test *test = tests + i;
 
-		if (test->fn)
-			test->result = test->fn();
-		else
-			test->result = test->fn_args(test->args);
+		test->result = test->fn();
 		if (test->result) {
 			++failed;
 			printf("\t[%2d]%-*s:"CLRED"%s"CLNRM" rc=%d\n", i,

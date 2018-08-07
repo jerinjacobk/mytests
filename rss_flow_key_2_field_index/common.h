@@ -9,14 +9,14 @@
 #endif
 enum {
 	PORT_VAL = 0,
-	IPV4,
-	IPV6,
-	TCP,
-	UDP,
-	SCTP,
-	NVGRE,
-	VXLAN,
-	GENEVE
+	IPV4_VAL,
+	IPV6_VAL,
+	TCP_VAL,
+	UDP_VAL,
+	SCTP_VAL,
+	NVGRE_VAL,
+	VXLAN_VAL,
+	GENEVE_VAL
 };
 
 #define FLOW_KEY_TYPE_PORT     BIT(0)

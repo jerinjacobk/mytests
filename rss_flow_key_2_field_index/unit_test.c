@@ -107,6 +107,8 @@ result_checker(uint32_t flowkey_cfg, int expect_error,
 	return 0;
 }
 
+//#define GENERATE_TESTCASE
+#ifdef GENERATE_TESTCASE
 static int
 PORT(void)
 {
@@ -220,60 +222,31 @@ struct otx2_test unit_tests[] = {
 	OTX2_TEST(NVGRE_VXLAN_GENEVE),
 	OTX2_TEST(PORT_NVGRE_VXLAN_GENEVE),
 };
+#endif
 
 #define MAX_BIT 8
 char proto_strings[][2][30] = {
 	[PORT_VAL] = {"PORT", "FLOW_KEY_TYPE_PORT"},
-	[IPV4] = {"IPV4", "FLOW_KEY_TYPE_IPV4"},
-	[IPV6] = {"IPV6", "FLOW_KEY_TYPE_IPV6"},
-	[TCP] = {"TCP", "FLOW_KEY_TYPE_TCP"},
-	[UDP] = {"UDP", "FLOW_KEY_TYPE_UDP"},
-	[SCTP] = {"SCTP", "FLOW_KEY_TYPE_SCTP"},
-	[NVGRE] = {"NVGRE", "FLOW_KEY_TYPE_NVGRE"},
-	[VXLAN] = {"VXLAN", "FLOW_KEY_TYPE_VXLAN"},
-	[GENEVE] = {"GENEVE", "FLOW_KEY_TYPE_GENEVE"}
+	[IPV4_VAL] = {"IPV4", "FLOW_KEY_TYPE_IPV4"},
+	[IPV6_VAL] = {"IPV6", "FLOW_KEY_TYPE_IPV6"},
+	[TCP_VAL] = {"TCP", "FLOW_KEY_TYPE_TCP"},
+	[UDP_VAL] = {"UDP", "FLOW_KEY_TYPE_UDP"},
+	[SCTP_VAL] = {"SCTP", "FLOW_KEY_TYPE_SCTP"},
+	[NVGRE_VAL] = {"NVGRE", "FLOW_KEY_TYPE_NVGRE"},
+	[VXLAN_VAL] = {"VXLAN", "FLOW_KEY_TYPE_VXLAN"},
+	[GENEVE_VAL] = {"GENEVE", "FLOW_KEY_TYPE_GENEVE"}
 };
 
-struct testcase {
-	char name[128];
-	uint32_t flowkey_cfg;
-	int expect_err;
-	int expected_fields;
-	int expected_last_key_off;
-};
-
-struct testcase tclist[] = {
 #ifndef GENERATE_TESTCASE
 #include "gen.h"
+#include "gen2.h"
 #endif
-};
-struct otx2_test tests[sizeof(tclist)/sizeof(struct testcase)];
-
-static int
-GENERATED_TC_FUNC(void *arg)
-{
-	uint32_t idx = (uint64_t)arg;
-	return result_checker(tclist[idx].flowkey_cfg, tclist[idx].expect_err,
-			      tclist[idx].expected_fields,
-			      tclist[idx].expected_last_key_off, NULL, NULL);
-}
 
 int main(void)
 {
 	OTX2_RUN_TESTS(unit_tests);
 
-#ifndef GENERATE_TESTCASE
-	uint64_t i;
-
-	for (i = 0; i < sizeof(tests)/sizeof(tests[0]); i++) {
-		strncpy(tests[i].name, tclist[i].name, sizeof(tests[i].name));
-		tests[i].fn_args = GENERATED_TC_FUNC;
-		tests[i].args = (void *)i;
-	}
-
-	printf("\n\nGenerated testcases:\n");
-	OTX2_RUN_TESTS(tests);
-#else
+#ifdef GENERATE_TESTCASE
 	uint32_t mask, i, cidx, cidx2, bit;
 	int result, rc;
 	char str[400], str2[100];
@@ -282,8 +255,7 @@ int main(void)
 
 		i = mask;
 		cidx = 0;
-		str2[0] = '"';
-		cidx2 = 1;
+		cidx2 = snprintf(str2, sizeof(str2), "static int\n");
 		while (i) {
 			bit = ffs(i) - 1;
 			i = i & ~BIT_ULL(bit);
@@ -293,20 +265,28 @@ int main(void)
 				cidx += rc;
 			rc = snprintf(&str2[cidx2], sizeof(str2) - cidx2,
 				      "%s%s", proto_strings[bit][0], i ? "_" :
-				      "\",");
+				      "(void)\n{\n");
 			if (rc > 0)
 				cidx2 += rc;
 		}
+		fprintf(stderr, "%s", str2);
 		result = result_checker(mask, 0, 5, 42, &fields, &last_key_off);
 		if (result < 0)
-			fprintf(stderr, "{%-47s %-170s 1, 5, 42,}, //[%x], fail\n",
-			       str2, str, mask);
+			fprintf(stderr,
+				"\treturn result_checker(%s 1, 5, 42, "
+				"NULL, NULL); //[%x], fail\n",
+				str, mask);
 		else if (result > 0)
-			fprintf(stderr, "{%-47s %-170s 0, %d, %d,}, //[%x], would pass!!\n",
-			       str2, str, fields, last_key_off, mask);
+			fprintf(stderr,
+				"\treturn result_checker(%s 0, %d, %d, "
+				"NULL, NULL); //[%x], would pass!!\n",
+			       str, fields, last_key_off, mask);
 		else
-			fprintf(stderr, "{%-47s %-170s 0, 5, 42,}, //[%x] passed!!\n",
-			       str2, str, mask);
+			fprintf(stderr,
+				"\treturn result_checker(%s 0, 5, 42, "
+				"NULL, NULL); //[%x] passed!!\n",
+				str, mask);
+		fprintf(stderr, "}\n\n");
 	}
 #endif
 

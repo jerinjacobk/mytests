@@ -15,8 +15,6 @@ struct otx2_test {
 	char name[OTX2_TEST_NAME_MAX];
 	int result;
 	test_fn fn;
-	test_fn_args fn_args;
-	void *args;
 };
 
 int otx2_run_tests(struct otx2_test *tests, int nr_tests);

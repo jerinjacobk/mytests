@@ -1,511 +1,3066 @@
-{"PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE", FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42,}, //[1ff], fail
-{"IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE",    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                 1, 5, 42,}, //[1fe], fail
-{"PORT_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE",    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                 1, 5, 42,}, //[1fd], fail
-{"IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE",         FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                    1, 5, 42,}, //[1fc], fail
-{"PORT_IPV4_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE",    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                 1, 5, 42,}, //[1fb], fail
-{"IPV4_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE",         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                    0, 5, 18,}, //[1fa], would pass!!
-{"PORT_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE",         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                    0, 5, 12,}, //[1f9], would pass!!
-{"TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE",              FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       0, 4, 10,}, //[1f8], would pass!!
-{"PORT_IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE",   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                1, 5, 42,}, //[1f7], fail
-{"IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE",        FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                   1, 5, 42,}, //[1f6], fail
-{"PORT_IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE",        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                   1, 5, 42,}, //[1f5], fail
-{"IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[1f4], fail
-{"PORT_IPV4_UDP_SCTP_NVGRE_VXLAN_GENEVE",        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                   1, 5, 42,}, //[1f3], fail
-{"IPV4_UDP_SCTP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      0, 5, 18,}, //[1f2], would pass!!
-{"PORT_UDP_SCTP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      0, 5, 12,}, //[1f1], would pass!!
-{"UDP_SCTP_NVGRE_VXLAN_GENEVE",                  FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         0, 4, 10,}, //[1f0], would pass!!
-{"PORT_IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE",   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                1, 5, 42,}, //[1ef], fail
-{"IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE",        FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                   1, 5, 42,}, //[1ee], fail
-{"PORT_IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE",        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                   1, 5, 42,}, //[1ed], fail
-{"IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[1ec], fail
-{"PORT_IPV4_TCP_SCTP_NVGRE_VXLAN_GENEVE",        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                   1, 5, 42,}, //[1eb], fail
-{"IPV4_TCP_SCTP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      0, 5, 18,}, //[1ea], would pass!!
-{"PORT_TCP_SCTP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      0, 5, 12,}, //[1e9], would pass!!
-{"TCP_SCTP_NVGRE_VXLAN_GENEVE",                  FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         0, 4, 10,}, //[1e8], would pass!!
-{"PORT_IPV4_IPV6_SCTP_NVGRE_VXLAN_GENEVE",       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                  1, 5, 42,}, //[1e7], fail
-{"IPV4_IPV6_SCTP_NVGRE_VXLAN_GENEVE",            FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                     1, 5, 42,}, //[1e6], fail
-{"PORT_IPV6_SCTP_NVGRE_VXLAN_GENEVE",            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                     1, 5, 42,}, //[1e5], fail
-{"IPV6_SCTP_NVGRE_VXLAN_GENEVE",                 FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                        1, 5, 42,}, //[1e4], fail
-{"PORT_IPV4_SCTP_NVGRE_VXLAN_GENEVE",            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                     1, 5, 42,}, //[1e3], fail
-{"IPV4_SCTP_NVGRE_VXLAN_GENEVE",                 FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                        0, 5, 18,}, //[1e2], would pass!!
-{"PORT_SCTP_NVGRE_VXLAN_GENEVE",                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                        0, 5, 12,}, //[1e1], would pass!!
-{"SCTP_NVGRE_VXLAN_GENEVE",                      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                           0, 4, 10,}, //[1e0], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE",    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                 1, 5, 42,}, //[1df], fail
-{"IPV4_IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE",         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                    1, 5, 42,}, //[1de], fail
-{"PORT_IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE",         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                    1, 5, 42,}, //[1dd], fail
-{"IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE",              FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[1dc], fail
-{"PORT_IPV4_TCP_UDP_NVGRE_VXLAN_GENEVE",         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                    1, 5, 42,}, //[1db], fail
-{"IPV4_TCP_UDP_NVGRE_VXLAN_GENEVE",              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       0, 5, 18,}, //[1da], would pass!!
-{"PORT_TCP_UDP_NVGRE_VXLAN_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       0, 5, 12,}, //[1d9], would pass!!
-{"TCP_UDP_NVGRE_VXLAN_GENEVE",                   FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          0, 4, 10,}, //[1d8], would pass!!
-{"PORT_IPV4_IPV6_UDP_NVGRE_VXLAN_GENEVE",        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                   1, 5, 42,}, //[1d7], fail
-{"IPV4_IPV6_UDP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[1d6], fail
-{"PORT_IPV6_UDP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[1d5], fail
-{"IPV6_UDP_NVGRE_VXLAN_GENEVE",                  FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         1, 5, 42,}, //[1d4], fail
-{"PORT_IPV4_UDP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[1d3], fail
-{"IPV4_UDP_NVGRE_VXLAN_GENEVE",                  FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         0, 5, 18,}, //[1d2], would pass!!
-{"PORT_UDP_NVGRE_VXLAN_GENEVE",                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         0, 5, 12,}, //[1d1], would pass!!
-{"UDP_NVGRE_VXLAN_GENEVE",                       FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 10,}, //[1d0], would pass!!
-{"PORT_IPV4_IPV6_TCP_NVGRE_VXLAN_GENEVE",        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                   1, 5, 42,}, //[1cf], fail
-{"IPV4_IPV6_TCP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[1ce], fail
-{"PORT_IPV6_TCP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[1cd], fail
-{"IPV6_TCP_NVGRE_VXLAN_GENEVE",                  FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         1, 5, 42,}, //[1cc], fail
-{"PORT_IPV4_TCP_NVGRE_VXLAN_GENEVE",             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[1cb], fail
-{"IPV4_TCP_NVGRE_VXLAN_GENEVE",                  FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         0, 5, 18,}, //[1ca], would pass!!
-{"PORT_TCP_NVGRE_VXLAN_GENEVE",                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         0, 5, 12,}, //[1c9], would pass!!
-{"TCP_NVGRE_VXLAN_GENEVE",                       FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 10,}, //[1c8], would pass!!
-{"PORT_IPV4_IPV6_NVGRE_VXLAN_GENEVE",            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                     1, 5, 42,}, //[1c7], fail
-{"IPV4_IPV6_NVGRE_VXLAN_GENEVE",                 FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                        1, 5, 42,}, //[1c6], fail
-{"PORT_IPV6_NVGRE_VXLAN_GENEVE",                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                        1, 5, 42,}, //[1c5], fail
-{"IPV6_NVGRE_VXLAN_GENEVE",                      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                           1, 5, 42,}, //[1c4], fail
-{"PORT_IPV4_NVGRE_VXLAN_GENEVE",                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                        0, 5, 16,}, //[1c3], would pass!!
-{"IPV4_NVGRE_VXLAN_GENEVE",                      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                           0, 4, 14,}, //[1c2], would pass!!
-{"PORT_NVGRE_VXLAN_GENEVE",                      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                           0, 4, 8,}, //[1c1], would pass!!
-{"NVGRE_VXLAN_GENEVE",                           FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                                              0, 3, 6,}, //[1c0], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_SCTP_VXLAN_GENEVE",     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                  1, 5, 42,}, //[1bf], fail
-{"IPV4_IPV6_TCP_UDP_SCTP_VXLAN_GENEVE",          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                     1, 5, 42,}, //[1be], fail
-{"PORT_IPV6_TCP_UDP_SCTP_VXLAN_GENEVE",          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                     1, 5, 42,}, //[1bd], fail
-{"IPV6_TCP_UDP_SCTP_VXLAN_GENEVE",               FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                        1, 5, 42,}, //[1bc], fail
-{"PORT_IPV4_TCP_UDP_SCTP_VXLAN_GENEVE",          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                     0, 5, 17,}, //[1bb], would pass!!
-{"IPV4_TCP_UDP_SCTP_VXLAN_GENEVE",               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                        0, 4, 15,}, //[1ba], would pass!!
-{"PORT_TCP_UDP_SCTP_VXLAN_GENEVE",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                        0, 4, 9,}, //[1b9], would pass!!
-{"TCP_UDP_SCTP_VXLAN_GENEVE",                    FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                           0, 3, 7,}, //[1b8], would pass!!
-{"PORT_IPV4_IPV6_UDP_SCTP_VXLAN_GENEVE",         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                    1, 5, 42,}, //[1b7], fail
-{"IPV4_IPV6_UDP_SCTP_VXLAN_GENEVE",              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[1b6], fail
-{"PORT_IPV6_UDP_SCTP_VXLAN_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[1b5], fail
-{"IPV6_UDP_SCTP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[1b4], fail
-{"PORT_IPV4_UDP_SCTP_VXLAN_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       0, 5, 17,}, //[1b3], would pass!!
-{"IPV4_UDP_SCTP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          0, 4, 15,}, //[1b2], would pass!!
-{"PORT_UDP_SCTP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          0, 4, 9,}, //[1b1], would pass!!
-{"UDP_SCTP_VXLAN_GENEVE",                        FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 3, 7,}, //[1b0], would pass!!
-{"PORT_IPV4_IPV6_TCP_SCTP_VXLAN_GENEVE",         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                    1, 5, 42,}, //[1af], fail
-{"IPV4_IPV6_TCP_SCTP_VXLAN_GENEVE",              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[1ae], fail
-{"PORT_IPV6_TCP_SCTP_VXLAN_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[1ad], fail
-{"IPV6_TCP_SCTP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[1ac], fail
-{"PORT_IPV4_TCP_SCTP_VXLAN_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       0, 5, 17,}, //[1ab], would pass!!
-{"IPV4_TCP_SCTP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          0, 4, 15,}, //[1aa], would pass!!
-{"PORT_TCP_SCTP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          0, 4, 9,}, //[1a9], would pass!!
-{"TCP_SCTP_VXLAN_GENEVE",                        FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 3, 7,}, //[1a8], would pass!!
-{"PORT_IPV4_IPV6_SCTP_VXLAN_GENEVE",             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[1a7], fail
-{"IPV4_IPV6_SCTP_VXLAN_GENEVE",                  FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         1, 5, 42,}, //[1a6], fail
-{"PORT_IPV6_SCTP_VXLAN_GENEVE",                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         1, 5, 42,}, //[1a5], fail
-{"IPV6_SCTP_VXLAN_GENEVE",                       FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                            1, 5, 42,}, //[1a4], fail
-{"PORT_IPV4_SCTP_VXLAN_GENEVE",                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         0, 5, 17,}, //[1a3], would pass!!
-{"IPV4_SCTP_VXLAN_GENEVE",                       FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 15,}, //[1a2], would pass!!
-{"PORT_SCTP_VXLAN_GENEVE",                       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 9,}, //[1a1], would pass!!
-{"SCTP_VXLAN_GENEVE",                            FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                                               0, 3, 7,}, //[1a0], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_VXLAN_GENEVE",          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                     1, 5, 42,}, //[19f], fail
-{"IPV4_IPV6_TCP_UDP_VXLAN_GENEVE",               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                        1, 5, 42,}, //[19e], fail
-{"PORT_IPV6_TCP_UDP_VXLAN_GENEVE",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                        1, 5, 42,}, //[19d], fail
-{"IPV6_TCP_UDP_VXLAN_GENEVE",                    FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                           1, 5, 42,}, //[19c], fail
-{"PORT_IPV4_TCP_UDP_VXLAN_GENEVE",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                        0, 5, 17,}, //[19b], would pass!!
-{"IPV4_TCP_UDP_VXLAN_GENEVE",                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                           0, 4, 15,}, //[19a], would pass!!
-{"PORT_TCP_UDP_VXLAN_GENEVE",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                           0, 4, 9,}, //[199], would pass!!
-{"TCP_UDP_VXLAN_GENEVE",                         FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 3, 7,}, //[198], would pass!!
-{"PORT_IPV4_IPV6_UDP_VXLAN_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[197], fail
-{"IPV4_IPV6_UDP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[196], fail
-{"PORT_IPV6_UDP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[195], fail
-{"IPV6_UDP_VXLAN_GENEVE",                        FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                             1, 5, 42,}, //[194], fail
-{"PORT_IPV4_UDP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          0, 5, 17,}, //[193], would pass!!
-{"IPV4_UDP_VXLAN_GENEVE",                        FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 15,}, //[192], would pass!!
-{"PORT_UDP_VXLAN_GENEVE",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 9,}, //[191], would pass!!
-{"UDP_VXLAN_GENEVE",                             FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 7,}, //[190], would pass!!
-{"PORT_IPV4_IPV6_TCP_VXLAN_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[18f], fail
-{"IPV4_IPV6_TCP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[18e], fail
-{"PORT_IPV6_TCP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[18d], fail
-{"IPV6_TCP_VXLAN_GENEVE",                        FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                             1, 5, 42,}, //[18c], fail
-{"PORT_IPV4_TCP_VXLAN_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                          0, 5, 17,}, //[18b], would pass!!
-{"IPV4_TCP_VXLAN_GENEVE",                        FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 15,}, //[18a], would pass!!
-{"PORT_TCP_VXLAN_GENEVE",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 9,}, //[189], would pass!!
-{"TCP_VXLAN_GENEVE",                             FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 7,}, //[188], would pass!!
-{"PORT_IPV4_IPV6_VXLAN_GENEVE",                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                         1, 5, 42,}, //[187], fail
-{"IPV4_IPV6_VXLAN_GENEVE",                       FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 35,}, //[186], would pass!!
-{"PORT_IPV6_VXLAN_GENEVE",                       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                            1, 5, 42,}, //[185], fail
-{"IPV6_VXLAN_GENEVE",                            FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                                               0, 3, 35,}, //[184], would pass!!
-{"PORT_IPV4_VXLAN_GENEVE",                       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 13,}, //[183], would pass!!
-{"IPV4_VXLAN_GENEVE",                            FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                                               0, 3, 11,}, //[182], would pass!!
-{"PORT_VXLAN_GENEVE",                            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                                               0, 3, 5,}, //[181], would pass!!
-{"VXLAN_GENEVE",                                 FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,                                                                                                                                  0, 2, 3,}, //[180], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE_GENEVE",     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                  1, 5, 42,}, //[17f], fail
-{"IPV4_IPV6_TCP_UDP_SCTP_NVGRE_GENEVE",          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                     1, 5, 42,}, //[17e], fail
-{"PORT_IPV6_TCP_UDP_SCTP_NVGRE_GENEVE",          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                     1, 5, 42,}, //[17d], fail
-{"IPV6_TCP_UDP_SCTP_NVGRE_GENEVE",               FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                        1, 5, 42,}, //[17c], fail
-{"PORT_IPV4_TCP_UDP_SCTP_NVGRE_GENEVE",          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                     0, 5, 17,}, //[17b], would pass!!
-{"IPV4_TCP_UDP_SCTP_NVGRE_GENEVE",               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                        0, 4, 15,}, //[17a], would pass!!
-{"PORT_TCP_UDP_SCTP_NVGRE_GENEVE",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                        0, 4, 9,}, //[179], would pass!!
-{"TCP_UDP_SCTP_NVGRE_GENEVE",                    FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                           0, 3, 7,}, //[178], would pass!!
-{"PORT_IPV4_IPV6_UDP_SCTP_NVGRE_GENEVE",         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                    1, 5, 42,}, //[177], fail
-{"IPV4_IPV6_UDP_SCTP_NVGRE_GENEVE",              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[176], fail
-{"PORT_IPV6_UDP_SCTP_NVGRE_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[175], fail
-{"IPV6_UDP_SCTP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[174], fail
-{"PORT_IPV4_UDP_SCTP_NVGRE_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                       0, 5, 17,}, //[173], would pass!!
-{"IPV4_UDP_SCTP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          0, 4, 15,}, //[172], would pass!!
-{"PORT_UDP_SCTP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          0, 4, 9,}, //[171], would pass!!
-{"UDP_SCTP_NVGRE_GENEVE",                        FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 3, 7,}, //[170], would pass!!
-{"PORT_IPV4_IPV6_TCP_SCTP_NVGRE_GENEVE",         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                    1, 5, 42,}, //[16f], fail
-{"IPV4_IPV6_TCP_SCTP_NVGRE_GENEVE",              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[16e], fail
-{"PORT_IPV6_TCP_SCTP_NVGRE_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[16d], fail
-{"IPV6_TCP_SCTP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[16c], fail
-{"PORT_IPV4_TCP_SCTP_NVGRE_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                       0, 5, 17,}, //[16b], would pass!!
-{"IPV4_TCP_SCTP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          0, 4, 15,}, //[16a], would pass!!
-{"PORT_TCP_SCTP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          0, 4, 9,}, //[169], would pass!!
-{"TCP_SCTP_NVGRE_GENEVE",                        FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 3, 7,}, //[168], would pass!!
-{"PORT_IPV4_IPV6_SCTP_NVGRE_GENEVE",             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                      1, 5, 42,}, //[167], fail
-{"IPV4_IPV6_SCTP_NVGRE_GENEVE",                  FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                         1, 5, 42,}, //[166], fail
-{"PORT_IPV6_SCTP_NVGRE_GENEVE",                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                         1, 5, 42,}, //[165], fail
-{"IPV6_SCTP_NVGRE_GENEVE",                       FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                            1, 5, 42,}, //[164], fail
-{"PORT_IPV4_SCTP_NVGRE_GENEVE",                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                         0, 5, 17,}, //[163], would pass!!
-{"IPV4_SCTP_NVGRE_GENEVE",                       FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 15,}, //[162], would pass!!
-{"PORT_SCTP_NVGRE_GENEVE",                       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 9,}, //[161], would pass!!
-{"SCTP_NVGRE_GENEVE",                            FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                                               0, 3, 7,}, //[160], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_NVGRE_GENEVE",          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                     1, 5, 42,}, //[15f], fail
-{"IPV4_IPV6_TCP_UDP_NVGRE_GENEVE",               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                        1, 5, 42,}, //[15e], fail
-{"PORT_IPV6_TCP_UDP_NVGRE_GENEVE",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                        1, 5, 42,}, //[15d], fail
-{"IPV6_TCP_UDP_NVGRE_GENEVE",                    FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                           1, 5, 42,}, //[15c], fail
-{"PORT_IPV4_TCP_UDP_NVGRE_GENEVE",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                        0, 5, 17,}, //[15b], would pass!!
-{"IPV4_TCP_UDP_NVGRE_GENEVE",                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                           0, 4, 15,}, //[15a], would pass!!
-{"PORT_TCP_UDP_NVGRE_GENEVE",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                           0, 4, 9,}, //[159], would pass!!
-{"TCP_UDP_NVGRE_GENEVE",                         FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 3, 7,}, //[158], would pass!!
-{"PORT_IPV4_IPV6_UDP_NVGRE_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[157], fail
-{"IPV4_IPV6_UDP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[156], fail
-{"PORT_IPV6_UDP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[155], fail
-{"IPV6_UDP_NVGRE_GENEVE",                        FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                             1, 5, 42,}, //[154], fail
-{"PORT_IPV4_UDP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          0, 5, 17,}, //[153], would pass!!
-{"IPV4_UDP_NVGRE_GENEVE",                        FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 15,}, //[152], would pass!!
-{"PORT_UDP_NVGRE_GENEVE",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 9,}, //[151], would pass!!
-{"UDP_NVGRE_GENEVE",                             FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 7,}, //[150], would pass!!
-{"PORT_IPV4_IPV6_TCP_NVGRE_GENEVE",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                       1, 5, 42,}, //[14f], fail
-{"IPV4_IPV6_TCP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[14e], fail
-{"PORT_IPV6_TCP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[14d], fail
-{"IPV6_TCP_NVGRE_GENEVE",                        FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                             1, 5, 42,}, //[14c], fail
-{"PORT_IPV4_TCP_NVGRE_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                          0, 5, 17,}, //[14b], would pass!!
-{"IPV4_TCP_NVGRE_GENEVE",                        FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 15,}, //[14a], would pass!!
-{"PORT_TCP_NVGRE_GENEVE",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 9,}, //[149], would pass!!
-{"TCP_NVGRE_GENEVE",                             FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 7,}, //[148], would pass!!
-{"PORT_IPV4_IPV6_NVGRE_GENEVE",                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                         1, 5, 42,}, //[147], fail
-{"IPV4_IPV6_NVGRE_GENEVE",                       FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 35,}, //[146], would pass!!
-{"PORT_IPV6_NVGRE_GENEVE",                       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                            1, 5, 42,}, //[145], fail
-{"IPV6_NVGRE_GENEVE",                            FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                                               0, 3, 35,}, //[144], would pass!!
-{"PORT_IPV4_NVGRE_GENEVE",                       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                            0, 4, 13,}, //[143], would pass!!
-{"IPV4_NVGRE_GENEVE",                            FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                                               0, 3, 11,}, //[142], would pass!!
-{"PORT_NVGRE_GENEVE",                            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                                               0, 3, 5,}, //[141], would pass!!
-{"NVGRE_GENEVE",                                 FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,                                                                                                                                  0, 2, 3,}, //[140], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_SCTP_GENEVE",           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                      1, 5, 42,}, //[13f], fail
-{"IPV4_IPV6_TCP_UDP_SCTP_GENEVE",                FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                         0, 4, 36,}, //[13e], would pass!!
-{"PORT_IPV6_TCP_UDP_SCTP_GENEVE",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                         1, 5, 42,}, //[13d], fail
-{"IPV6_TCP_UDP_SCTP_GENEVE",                     FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                            0, 3, 36,}, //[13c], would pass!!
-{"PORT_IPV4_TCP_UDP_SCTP_GENEVE",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                         0, 4, 14,}, //[13b], would pass!!
-{"IPV4_TCP_UDP_SCTP_GENEVE",                     FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                            0, 3, 12,}, //[13a], would pass!!
-{"PORT_TCP_UDP_SCTP_GENEVE",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                            0, 3, 6,}, //[139], would pass!!
-{"TCP_UDP_SCTP_GENEVE",                          FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                               0, 2, 4,}, //[138], would pass!!
-{"PORT_IPV4_IPV6_UDP_SCTP_GENEVE",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                        1, 5, 42,}, //[137], fail
-{"IPV4_IPV6_UDP_SCTP_GENEVE",                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                           0, 4, 36,}, //[136], would pass!!
-{"PORT_IPV6_UDP_SCTP_GENEVE",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                           1, 5, 42,}, //[135], fail
-{"IPV6_UDP_SCTP_GENEVE",                         FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 3, 36,}, //[134], would pass!!
-{"PORT_IPV4_UDP_SCTP_GENEVE",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                           0, 4, 14,}, //[133], would pass!!
-{"IPV4_UDP_SCTP_GENEVE",                         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 3, 12,}, //[132], would pass!!
-{"PORT_UDP_SCTP_GENEVE",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 3, 6,}, //[131], would pass!!
-{"UDP_SCTP_GENEVE",                              FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                                                 0, 2, 4,}, //[130], would pass!!
-{"PORT_IPV4_IPV6_TCP_SCTP_GENEVE",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                        1, 5, 42,}, //[12f], fail
-{"IPV4_IPV6_TCP_SCTP_GENEVE",                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                           0, 4, 36,}, //[12e], would pass!!
-{"PORT_IPV6_TCP_SCTP_GENEVE",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                           1, 5, 42,}, //[12d], fail
-{"IPV6_TCP_SCTP_GENEVE",                         FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 3, 36,}, //[12c], would pass!!
-{"PORT_IPV4_TCP_SCTP_GENEVE",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                           0, 4, 14,}, //[12b], would pass!!
-{"IPV4_TCP_SCTP_GENEVE",                         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 3, 12,}, //[12a], would pass!!
-{"PORT_TCP_SCTP_GENEVE",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 3, 6,}, //[129], would pass!!
-{"TCP_SCTP_GENEVE",                              FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                                                 0, 2, 4,}, //[128], would pass!!
-{"PORT_IPV4_IPV6_SCTP_GENEVE",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                          1, 5, 42,}, //[127], fail
-{"IPV4_IPV6_SCTP_GENEVE",                        FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 36,}, //[126], would pass!!
-{"PORT_IPV6_SCTP_GENEVE",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                             1, 5, 42,}, //[125], fail
-{"IPV6_SCTP_GENEVE",                             FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 36,}, //[124], would pass!!
-{"PORT_IPV4_SCTP_GENEVE",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 14,}, //[123], would pass!!
-{"IPV4_SCTP_GENEVE",                             FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 12,}, //[122], would pass!!
-{"PORT_SCTP_GENEVE",                             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 6,}, //[121], would pass!!
-{"SCTP_GENEVE",                                  FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE,                                                                                                                                   0, 2, 4,}, //[120], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_GENEVE",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                         1, 5, 42,}, //[11f], fail
-{"IPV4_IPV6_TCP_UDP_GENEVE",                     FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                            0, 4, 36,}, //[11e], would pass!!
-{"PORT_IPV6_TCP_UDP_GENEVE",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                            1, 5, 42,}, //[11d], fail
-{"IPV6_TCP_UDP_GENEVE",                          FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                               0, 3, 36,}, //[11c], would pass!!
-{"PORT_IPV4_TCP_UDP_GENEVE",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                            0, 4, 14,}, //[11b], would pass!!
-{"IPV4_TCP_UDP_GENEVE",                          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                               0, 3, 12,}, //[11a], would pass!!
-{"PORT_TCP_UDP_GENEVE",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                               0, 3, 6,}, //[119], would pass!!
-{"TCP_UDP_GENEVE",                               FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                                                  0, 2, 4,}, //[118], would pass!!
-{"PORT_IPV4_IPV6_UDP_GENEVE",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                           1, 5, 42,}, //[117], fail
-{"IPV4_IPV6_UDP_GENEVE",                         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 4, 36,}, //[116], would pass!!
-{"PORT_IPV6_UDP_GENEVE",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                              1, 5, 42,}, //[115], fail
-{"IPV6_UDP_GENEVE",                              FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                                                 0, 3, 36,}, //[114], would pass!!
-{"PORT_IPV4_UDP_GENEVE",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 4, 14,}, //[113], would pass!!
-{"IPV4_UDP_GENEVE",                              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                                                 0, 3, 12,}, //[112], would pass!!
-{"PORT_UDP_GENEVE",                              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                                                 0, 3, 6,}, //[111], would pass!!
-{"UDP_GENEVE",                                   FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE,                                                                                                                                    0, 2, 4,}, //[110], would pass!!
-{"PORT_IPV4_IPV6_TCP_GENEVE",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE,                                                                           1, 5, 42,}, //[10f], fail
-{"IPV4_IPV6_TCP_GENEVE",                         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 4, 36,}, //[10e], would pass!!
-{"PORT_IPV6_TCP_GENEVE",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE,                                                                                              1, 5, 42,}, //[10d], fail
-{"IPV6_TCP_GENEVE",                              FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE,                                                                                                                 0, 3, 36,}, //[10c], would pass!!
-{"PORT_IPV4_TCP_GENEVE",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE,                                                                                              0, 4, 14,}, //[10b], would pass!!
-{"IPV4_TCP_GENEVE",                              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE,                                                                                                                 0, 3, 12,}, //[10a], would pass!!
-{"PORT_TCP_GENEVE",                              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE,                                                                                                                 0, 3, 6,}, //[109], would pass!!
-{"TCP_GENEVE",                                   FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE,                                                                                                                                    0, 2, 4,}, //[108], would pass!!
-{"PORT_IPV4_IPV6_GENEVE",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_GENEVE,                                                                                             0, 4, 34,}, //[107], would pass!!
-{"IPV4_IPV6_GENEVE",                             FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 32,}, //[106], would pass!!
-{"PORT_IPV6_GENEVE",                             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 34,}, //[105], would pass!!
-{"IPV6_GENEVE",                                  FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_GENEVE,                                                                                                                                   0, 2, 32,}, //[104], would pass!!
-{"PORT_IPV4_GENEVE",                             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_GENEVE,                                                                                                                0, 3, 10,}, //[103], would pass!!
-{"IPV4_GENEVE",                                  FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_GENEVE,                                                                                                                                   0, 2, 8,}, //[102], would pass!!
-{"PORT_GENEVE",                                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_GENEVE,                                                                                                                                   0, 2, 2,}, //[101], would pass!!
-{"GENEVE",                                       FLOW_KEY_TYPE_GENEVE,                                                                                                                                                      0, 1, 0,}, //[100], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN",      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                   1, 5, 42,}, //[ff], fail
-{"IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN",           FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                      1, 5, 42,}, //[fe], fail
-{"PORT_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN",           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                      1, 5, 42,}, //[fd], fail
-{"IPV6_TCP_UDP_SCTP_NVGRE_VXLAN",                FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                         1, 5, 42,}, //[fc], fail
-{"PORT_IPV4_TCP_UDP_SCTP_NVGRE_VXLAN",           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                      0, 5, 17,}, //[fb], would pass!!
-{"IPV4_TCP_UDP_SCTP_NVGRE_VXLAN",                FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                         0, 4, 15,}, //[fa], would pass!!
-{"PORT_TCP_UDP_SCTP_NVGRE_VXLAN",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                         0, 4, 9,}, //[f9], would pass!!
-{"TCP_UDP_SCTP_NVGRE_VXLAN",                     FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                            0, 3, 7,}, //[f8], would pass!!
-{"PORT_IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN",          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                     1, 5, 42,}, //[f7], fail
-{"IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN",               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                        1, 5, 42,}, //[f6], fail
-{"PORT_IPV6_UDP_SCTP_NVGRE_VXLAN",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                        1, 5, 42,}, //[f5], fail
-{"IPV6_UDP_SCTP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           1, 5, 42,}, //[f4], fail
-{"PORT_IPV4_UDP_SCTP_NVGRE_VXLAN",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                        0, 5, 17,}, //[f3], would pass!!
-{"IPV4_UDP_SCTP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           0, 4, 15,}, //[f2], would pass!!
-{"PORT_UDP_SCTP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           0, 4, 9,}, //[f1], would pass!!
-{"UDP_SCTP_NVGRE_VXLAN",                         FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                              0, 3, 7,}, //[f0], would pass!!
-{"PORT_IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN",          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                     1, 5, 42,}, //[ef], fail
-{"IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN",               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                        1, 5, 42,}, //[ee], fail
-{"PORT_IPV6_TCP_SCTP_NVGRE_VXLAN",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                        1, 5, 42,}, //[ed], fail
-{"IPV6_TCP_SCTP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           1, 5, 42,}, //[ec], fail
-{"PORT_IPV4_TCP_SCTP_NVGRE_VXLAN",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                        0, 5, 17,}, //[eb], would pass!!
-{"IPV4_TCP_SCTP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           0, 4, 15,}, //[ea], would pass!!
-{"PORT_TCP_SCTP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           0, 4, 9,}, //[e9], would pass!!
-{"TCP_SCTP_NVGRE_VXLAN",                         FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                              0, 3, 7,}, //[e8], would pass!!
-{"PORT_IPV4_IPV6_SCTP_NVGRE_VXLAN",              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                       1, 5, 42,}, //[e7], fail
-{"IPV4_IPV6_SCTP_NVGRE_VXLAN",                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                          1, 5, 42,}, //[e6], fail
-{"PORT_IPV6_SCTP_NVGRE_VXLAN",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                          1, 5, 42,}, //[e5], fail
-{"IPV6_SCTP_NVGRE_VXLAN",                        FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                             1, 5, 42,}, //[e4], fail
-{"PORT_IPV4_SCTP_NVGRE_VXLAN",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                          0, 5, 17,}, //[e3], would pass!!
-{"IPV4_SCTP_NVGRE_VXLAN",                        FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                             0, 4, 15,}, //[e2], would pass!!
-{"PORT_SCTP_NVGRE_VXLAN",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                             0, 4, 9,}, //[e1], would pass!!
-{"SCTP_NVGRE_VXLAN",                             FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                                                0, 3, 7,}, //[e0], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_NVGRE_VXLAN",           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                      1, 5, 42,}, //[df], fail
-{"IPV4_IPV6_TCP_UDP_NVGRE_VXLAN",                FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                         1, 5, 42,}, //[de], fail
-{"PORT_IPV6_TCP_UDP_NVGRE_VXLAN",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                         1, 5, 42,}, //[dd], fail
-{"IPV6_TCP_UDP_NVGRE_VXLAN",                     FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                            1, 5, 42,}, //[dc], fail
-{"PORT_IPV4_TCP_UDP_NVGRE_VXLAN",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                         0, 5, 17,}, //[db], would pass!!
-{"IPV4_TCP_UDP_NVGRE_VXLAN",                     FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                            0, 4, 15,}, //[da], would pass!!
-{"PORT_TCP_UDP_NVGRE_VXLAN",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                            0, 4, 9,}, //[d9], would pass!!
-{"TCP_UDP_NVGRE_VXLAN",                          FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 3, 7,}, //[d8], would pass!!
-{"PORT_IPV4_IPV6_UDP_NVGRE_VXLAN",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                        1, 5, 42,}, //[d7], fail
-{"IPV4_IPV6_UDP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           1, 5, 42,}, //[d6], fail
-{"PORT_IPV6_UDP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           1, 5, 42,}, //[d5], fail
-{"IPV6_UDP_NVGRE_VXLAN",                         FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                              1, 5, 42,}, //[d4], fail
-{"PORT_IPV4_UDP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           0, 5, 17,}, //[d3], would pass!!
-{"IPV4_UDP_NVGRE_VXLAN",                         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                              0, 4, 15,}, //[d2], would pass!!
-{"PORT_UDP_NVGRE_VXLAN",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                              0, 4, 9,}, //[d1], would pass!!
-{"UDP_NVGRE_VXLAN",                              FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                                                 0, 3, 7,}, //[d0], would pass!!
-{"PORT_IPV4_IPV6_TCP_NVGRE_VXLAN",               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                        1, 5, 42,}, //[cf], fail
-{"IPV4_IPV6_TCP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           1, 5, 42,}, //[ce], fail
-{"PORT_IPV6_TCP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           1, 5, 42,}, //[cd], fail
-{"IPV6_TCP_NVGRE_VXLAN",                         FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                              1, 5, 42,}, //[cc], fail
-{"PORT_IPV4_TCP_NVGRE_VXLAN",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                           0, 5, 17,}, //[cb], would pass!!
-{"IPV4_TCP_NVGRE_VXLAN",                         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                              0, 4, 15,}, //[ca], would pass!!
-{"PORT_TCP_NVGRE_VXLAN",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                              0, 4, 9,}, //[c9], would pass!!
-{"TCP_NVGRE_VXLAN",                              FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                                                 0, 3, 7,}, //[c8], would pass!!
-{"PORT_IPV4_IPV6_NVGRE_VXLAN",                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                          1, 5, 42,}, //[c7], fail
-{"IPV4_IPV6_NVGRE_VXLAN",                        FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                             0, 4, 35,}, //[c6], would pass!!
-{"PORT_IPV6_NVGRE_VXLAN",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                             1, 5, 42,}, //[c5], fail
-{"IPV6_NVGRE_VXLAN",                             FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                                                0, 3, 35,}, //[c4], would pass!!
-{"PORT_IPV4_NVGRE_VXLAN",                        FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                             0, 4, 13,}, //[c3], would pass!!
-{"IPV4_NVGRE_VXLAN",                             FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                                                0, 3, 11,}, //[c2], would pass!!
-{"PORT_NVGRE_VXLAN",                             FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                                                0, 3, 5,}, //[c1], would pass!!
-{"NVGRE_VXLAN",                                  FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,                                                                                                                                   0, 2, 3,}, //[c0], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_SCTP_VXLAN",            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                       1, 5, 42,}, //[bf], fail
-{"IPV4_IPV6_TCP_UDP_SCTP_VXLAN",                 FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                          0, 4, 36,}, //[be], would pass!!
-{"PORT_IPV6_TCP_UDP_SCTP_VXLAN",                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                          1, 5, 42,}, //[bd], fail
-{"IPV6_TCP_UDP_SCTP_VXLAN",                      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                             0, 3, 36,}, //[bc], would pass!!
-{"PORT_IPV4_TCP_UDP_SCTP_VXLAN",                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                          0, 4, 14,}, //[bb], would pass!!
-{"IPV4_TCP_UDP_SCTP_VXLAN",                      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                             0, 3, 12,}, //[ba], would pass!!
-{"PORT_TCP_UDP_SCTP_VXLAN",                      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                             0, 3, 6,}, //[b9], would pass!!
-{"TCP_UDP_SCTP_VXLAN",                           FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                                0, 2, 4,}, //[b8], would pass!!
-{"PORT_IPV4_IPV6_UDP_SCTP_VXLAN",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                         1, 5, 42,}, //[b7], fail
-{"IPV4_IPV6_UDP_SCTP_VXLAN",                     FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                            0, 4, 36,}, //[b6], would pass!!
-{"PORT_IPV6_UDP_SCTP_VXLAN",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                            1, 5, 42,}, //[b5], fail
-{"IPV6_UDP_SCTP_VXLAN",                          FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 3, 36,}, //[b4], would pass!!
-{"PORT_IPV4_UDP_SCTP_VXLAN",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                            0, 4, 14,}, //[b3], would pass!!
-{"IPV4_UDP_SCTP_VXLAN",                          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 3, 12,}, //[b2], would pass!!
-{"PORT_UDP_SCTP_VXLAN",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 3, 6,}, //[b1], would pass!!
-{"UDP_SCTP_VXLAN",                               FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                                                  0, 2, 4,}, //[b0], would pass!!
-{"PORT_IPV4_IPV6_TCP_SCTP_VXLAN",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                         1, 5, 42,}, //[af], fail
-{"IPV4_IPV6_TCP_SCTP_VXLAN",                     FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                            0, 4, 36,}, //[ae], would pass!!
-{"PORT_IPV6_TCP_SCTP_VXLAN",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                            1, 5, 42,}, //[ad], fail
-{"IPV6_TCP_SCTP_VXLAN",                          FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 3, 36,}, //[ac], would pass!!
-{"PORT_IPV4_TCP_SCTP_VXLAN",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                            0, 4, 14,}, //[ab], would pass!!
-{"IPV4_TCP_SCTP_VXLAN",                          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 3, 12,}, //[aa], would pass!!
-{"PORT_TCP_SCTP_VXLAN",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 3, 6,}, //[a9], would pass!!
-{"TCP_SCTP_VXLAN",                               FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                                                  0, 2, 4,}, //[a8], would pass!!
-{"PORT_IPV4_IPV6_SCTP_VXLAN",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                           1, 5, 42,}, //[a7], fail
-{"IPV4_IPV6_SCTP_VXLAN",                         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                              0, 4, 36,}, //[a6], would pass!!
-{"PORT_IPV6_SCTP_VXLAN",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                              1, 5, 42,}, //[a5], fail
-{"IPV6_SCTP_VXLAN",                              FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                                                 0, 3, 36,}, //[a4], would pass!!
-{"PORT_IPV4_SCTP_VXLAN",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                              0, 4, 14,}, //[a3], would pass!!
-{"IPV4_SCTP_VXLAN",                              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                                                 0, 3, 12,}, //[a2], would pass!!
-{"PORT_SCTP_VXLAN",                              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                                                 0, 3, 6,}, //[a1], would pass!!
-{"SCTP_VXLAN",                                   FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN,                                                                                                                                    0, 2, 4,}, //[a0], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_VXLAN",                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                          1, 5, 42,}, //[9f], fail
-{"IPV4_IPV6_TCP_UDP_VXLAN",                      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                             0, 4, 36,}, //[9e], would pass!!
-{"PORT_IPV6_TCP_UDP_VXLAN",                      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                             1, 5, 42,}, //[9d], fail
-{"IPV6_TCP_UDP_VXLAN",                           FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                                0, 3, 36,}, //[9c], would pass!!
-{"PORT_IPV4_TCP_UDP_VXLAN",                      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                             0, 4, 14,}, //[9b], would pass!!
-{"IPV4_TCP_UDP_VXLAN",                           FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                                0, 3, 12,}, //[9a], would pass!!
-{"PORT_TCP_UDP_VXLAN",                           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                                0, 3, 6,}, //[99], would pass!!
-{"TCP_UDP_VXLAN",                                FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                                                   0, 2, 4,}, //[98], would pass!!
-{"PORT_IPV4_IPV6_UDP_VXLAN",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                            1, 5, 42,}, //[97], fail
-{"IPV4_IPV6_UDP_VXLAN",                          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 4, 36,}, //[96], would pass!!
-{"PORT_IPV6_UDP_VXLAN",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                               1, 5, 42,}, //[95], fail
-{"IPV6_UDP_VXLAN",                               FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                                                  0, 3, 36,}, //[94], would pass!!
-{"PORT_IPV4_UDP_VXLAN",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 4, 14,}, //[93], would pass!!
-{"IPV4_UDP_VXLAN",                               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                                                  0, 3, 12,}, //[92], would pass!!
-{"PORT_UDP_VXLAN",                               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                                                  0, 3, 6,}, //[91], would pass!!
-{"UDP_VXLAN",                                    FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN,                                                                                                                                     0, 2, 4,}, //[90], would pass!!
-{"PORT_IPV4_IPV6_TCP_VXLAN",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN,                                                                            1, 5, 42,}, //[8f], fail
-{"IPV4_IPV6_TCP_VXLAN",                          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 4, 36,}, //[8e], would pass!!
-{"PORT_IPV6_TCP_VXLAN",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN,                                                                                               1, 5, 42,}, //[8d], fail
-{"IPV6_TCP_VXLAN",                               FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN,                                                                                                                  0, 3, 36,}, //[8c], would pass!!
-{"PORT_IPV4_TCP_VXLAN",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN,                                                                                               0, 4, 14,}, //[8b], would pass!!
-{"IPV4_TCP_VXLAN",                               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN,                                                                                                                  0, 3, 12,}, //[8a], would pass!!
-{"PORT_TCP_VXLAN",                               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN,                                                                                                                  0, 3, 6,}, //[89], would pass!!
-{"TCP_VXLAN",                                    FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN,                                                                                                                                     0, 2, 4,}, //[88], would pass!!
-{"PORT_IPV4_IPV6_VXLAN",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN,                                                                                              0, 4, 34,}, //[87], would pass!!
-{"IPV4_IPV6_VXLAN",                              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN,                                                                                                                 0, 3, 32,}, //[86], would pass!!
-{"PORT_IPV6_VXLAN",                              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN,                                                                                                                 0, 3, 34,}, //[85], would pass!!
-{"IPV6_VXLAN",                                   FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN,                                                                                                                                    0, 2, 32,}, //[84], would pass!!
-{"PORT_IPV4_VXLAN",                              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_VXLAN,                                                                                                                 0, 3, 10,}, //[83], would pass!!
-{"IPV4_VXLAN",                                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_VXLAN,                                                                                                                                    0, 2, 8,}, //[82], would pass!!
-{"PORT_VXLAN",                                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_VXLAN,                                                                                                                                    0, 2, 2,}, //[81], would pass!!
-{"VXLAN",                                        FLOW_KEY_TYPE_VXLAN,                                                                                                                                                       0, 1, 0,}, //[80], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE",            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                       1, 5, 42,}, //[7f], fail
-{"IPV4_IPV6_TCP_UDP_SCTP_NVGRE",                 FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                          0, 4, 36,}, //[7e], would pass!!
-{"PORT_IPV6_TCP_UDP_SCTP_NVGRE",                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                          1, 5, 42,}, //[7d], fail
-{"IPV6_TCP_UDP_SCTP_NVGRE",                      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                             0, 3, 36,}, //[7c], would pass!!
-{"PORT_IPV4_TCP_UDP_SCTP_NVGRE",                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                          0, 4, 14,}, //[7b], would pass!!
-{"IPV4_TCP_UDP_SCTP_NVGRE",                      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                             0, 3, 12,}, //[7a], would pass!!
-{"PORT_TCP_UDP_SCTP_NVGRE",                      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                             0, 3, 6,}, //[79], would pass!!
-{"TCP_UDP_SCTP_NVGRE",                           FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                                0, 2, 4,}, //[78], would pass!!
-{"PORT_IPV4_IPV6_UDP_SCTP_NVGRE",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                         1, 5, 42,}, //[77], fail
-{"IPV4_IPV6_UDP_SCTP_NVGRE",                     FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                            0, 4, 36,}, //[76], would pass!!
-{"PORT_IPV6_UDP_SCTP_NVGRE",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                            1, 5, 42,}, //[75], fail
-{"IPV6_UDP_SCTP_NVGRE",                          FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 3, 36,}, //[74], would pass!!
-{"PORT_IPV4_UDP_SCTP_NVGRE",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                            0, 4, 14,}, //[73], would pass!!
-{"IPV4_UDP_SCTP_NVGRE",                          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 3, 12,}, //[72], would pass!!
-{"PORT_UDP_SCTP_NVGRE",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 3, 6,}, //[71], would pass!!
-{"UDP_SCTP_NVGRE",                               FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                                                  0, 2, 4,}, //[70], would pass!!
-{"PORT_IPV4_IPV6_TCP_SCTP_NVGRE",                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                         1, 5, 42,}, //[6f], fail
-{"IPV4_IPV6_TCP_SCTP_NVGRE",                     FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                            0, 4, 36,}, //[6e], would pass!!
-{"PORT_IPV6_TCP_SCTP_NVGRE",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                            1, 5, 42,}, //[6d], fail
-{"IPV6_TCP_SCTP_NVGRE",                          FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 3, 36,}, //[6c], would pass!!
-{"PORT_IPV4_TCP_SCTP_NVGRE",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                            0, 4, 14,}, //[6b], would pass!!
-{"IPV4_TCP_SCTP_NVGRE",                          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 3, 12,}, //[6a], would pass!!
-{"PORT_TCP_SCTP_NVGRE",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 3, 6,}, //[69], would pass!!
-{"TCP_SCTP_NVGRE",                               FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                                                  0, 2, 4,}, //[68], would pass!!
-{"PORT_IPV4_IPV6_SCTP_NVGRE",                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                           1, 5, 42,}, //[67], fail
-{"IPV4_IPV6_SCTP_NVGRE",                         FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                              0, 4, 36,}, //[66], would pass!!
-{"PORT_IPV6_SCTP_NVGRE",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                              1, 5, 42,}, //[65], fail
-{"IPV6_SCTP_NVGRE",                              FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                                                 0, 3, 36,}, //[64], would pass!!
-{"PORT_IPV4_SCTP_NVGRE",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                              0, 4, 14,}, //[63], would pass!!
-{"IPV4_SCTP_NVGRE",                              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                                                 0, 3, 12,}, //[62], would pass!!
-{"PORT_SCTP_NVGRE",                              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                                                 0, 3, 6,}, //[61], would pass!!
-{"SCTP_NVGRE",                                   FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE,                                                                                                                                    0, 2, 4,}, //[60], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_NVGRE",                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                          1, 5, 42,}, //[5f], fail
-{"IPV4_IPV6_TCP_UDP_NVGRE",                      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                             0, 4, 36,}, //[5e], would pass!!
-{"PORT_IPV6_TCP_UDP_NVGRE",                      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                             1, 5, 42,}, //[5d], fail
-{"IPV6_TCP_UDP_NVGRE",                           FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                                0, 3, 36,}, //[5c], would pass!!
-{"PORT_IPV4_TCP_UDP_NVGRE",                      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                             0, 4, 14,}, //[5b], would pass!!
-{"IPV4_TCP_UDP_NVGRE",                           FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                                0, 3, 12,}, //[5a], would pass!!
-{"PORT_TCP_UDP_NVGRE",                           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                                0, 3, 6,}, //[59], would pass!!
-{"TCP_UDP_NVGRE",                                FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                                                   0, 2, 4,}, //[58], would pass!!
-{"PORT_IPV4_IPV6_UDP_NVGRE",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                            1, 5, 42,}, //[57], fail
-{"IPV4_IPV6_UDP_NVGRE",                          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 4, 36,}, //[56], would pass!!
-{"PORT_IPV6_UDP_NVGRE",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                               1, 5, 42,}, //[55], fail
-{"IPV6_UDP_NVGRE",                               FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                                                  0, 3, 36,}, //[54], would pass!!
-{"PORT_IPV4_UDP_NVGRE",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 4, 14,}, //[53], would pass!!
-{"IPV4_UDP_NVGRE",                               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                                                  0, 3, 12,}, //[52], would pass!!
-{"PORT_UDP_NVGRE",                               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                                                  0, 3, 6,}, //[51], would pass!!
-{"UDP_NVGRE",                                    FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE,                                                                                                                                     0, 2, 4,}, //[50], would pass!!
-{"PORT_IPV4_IPV6_TCP_NVGRE",                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE,                                                                            1, 5, 42,}, //[4f], fail
-{"IPV4_IPV6_TCP_NVGRE",                          FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 4, 36,}, //[4e], would pass!!
-{"PORT_IPV6_TCP_NVGRE",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE,                                                                                               1, 5, 42,}, //[4d], fail
-{"IPV6_TCP_NVGRE",                               FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE,                                                                                                                  0, 3, 36,}, //[4c], would pass!!
-{"PORT_IPV4_TCP_NVGRE",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE,                                                                                               0, 4, 14,}, //[4b], would pass!!
-{"IPV4_TCP_NVGRE",                               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE,                                                                                                                  0, 3, 12,}, //[4a], would pass!!
-{"PORT_TCP_NVGRE",                               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE,                                                                                                                  0, 3, 6,}, //[49], would pass!!
-{"TCP_NVGRE",                                    FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE,                                                                                                                                     0, 2, 4,}, //[48], would pass!!
-{"PORT_IPV4_IPV6_NVGRE",                         FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE,                                                                                              0, 4, 34,}, //[47], would pass!!
-{"IPV4_IPV6_NVGRE",                              FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE,                                                                                                                 0, 3, 32,}, //[46], would pass!!
-{"PORT_IPV6_NVGRE",                              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE,                                                                                                                 0, 3, 34,}, //[45], would pass!!
-{"IPV6_NVGRE",                                   FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE,                                                                                                                                    0, 2, 32,}, //[44], would pass!!
-{"PORT_IPV4_NVGRE",                              FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE,                                                                                                                 0, 3, 10,}, //[43], would pass!!
-{"IPV4_NVGRE",                                   FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE,                                                                                                                                    0, 2, 8,}, //[42], would pass!!
-{"PORT_NVGRE",                                   FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_NVGRE,                                                                                                                                    0, 2, 2,}, //[41], would pass!!
-{"NVGRE",                                        FLOW_KEY_TYPE_NVGRE,                                                                                                                                                       0, 1, 0,}, //[40], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP_SCTP",                  FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                           0, 4, 34,}, //[3f], would pass!!
-{"IPV4_IPV6_TCP_UDP_SCTP",                       FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                              0, 3, 32,}, //[3e], would pass!!
-{"PORT_IPV6_TCP_UDP_SCTP",                       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                              0, 3, 34,}, //[3d], would pass!!
-{"IPV6_TCP_UDP_SCTP",                            FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                 0, 2, 32,}, //[3c], would pass!!
-{"PORT_IPV4_TCP_UDP_SCTP",                       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                              0, 3, 10,}, //[3b], would pass!!
-{"IPV4_TCP_UDP_SCTP",                            FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                 0, 2, 8,}, //[3a], would pass!!
-{"PORT_TCP_UDP_SCTP",                            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                 0, 2, 2,}, //[39], would pass!!
-{"TCP_UDP_SCTP",                                 FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                                    0, 1, 0,}, //[38], would pass!!
-{"PORT_IPV4_IPV6_UDP_SCTP",                      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                             0, 4, 34,}, //[37], would pass!!
-{"IPV4_IPV6_UDP_SCTP",                           FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                0, 3, 32,}, //[36], would pass!!
-{"PORT_IPV6_UDP_SCTP",                           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                0, 3, 34,}, //[35], would pass!!
-{"IPV6_UDP_SCTP",                                FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                                   0, 2, 32,}, //[34], would pass!!
-{"PORT_IPV4_UDP_SCTP",                           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                0, 3, 10,}, //[33], would pass!!
-{"IPV4_UDP_SCTP",                                FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                                   0, 2, 8,}, //[32], would pass!!
-{"PORT_UDP_SCTP",                                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                                   0, 2, 2,}, //[31], would pass!!
-{"UDP_SCTP",                                     FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP,                                                                                                                                      0, 1, 0,}, //[30], would pass!!
-{"PORT_IPV4_IPV6_TCP_SCTP",                      FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP,                                                                             0, 4, 34,}, //[2f], would pass!!
-{"IPV4_IPV6_TCP_SCTP",                           FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP,                                                                                                0, 3, 32,}, //[2e], would pass!!
-{"PORT_IPV6_TCP_SCTP",                           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP,                                                                                                0, 3, 34,}, //[2d], would pass!!
-{"IPV6_TCP_SCTP",                                FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP,                                                                                                                   0, 2, 32,}, //[2c], would pass!!
-{"PORT_IPV4_TCP_SCTP",                           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP,                                                                                                0, 3, 10,}, //[2b], would pass!!
-{"IPV4_TCP_SCTP",                                FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP,                                                                                                                   0, 2, 8,}, //[2a], would pass!!
-{"PORT_TCP_SCTP",                                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP,                                                                                                                   0, 2, 2,}, //[29], would pass!!
-{"TCP_SCTP",                                     FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP,                                                                                                                                      0, 1, 0,}, //[28], would pass!!
-{"PORT_IPV4_IPV6_SCTP",                          FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP,                                                                                               0, 4, 34,}, //[27], would pass!!
-{"IPV4_IPV6_SCTP",                               FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP,                                                                                                                  0, 3, 32,}, //[26], would pass!!
-{"PORT_IPV6_SCTP",                               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP,                                                                                                                  0, 3, 34,}, //[25], would pass!!
-{"IPV6_SCTP",                                    FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP,                                                                                                                                     0, 2, 32,}, //[24], would pass!!
-{"PORT_IPV4_SCTP",                               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP,                                                                                                                  0, 3, 10,}, //[23], would pass!!
-{"IPV4_SCTP",                                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP,                                                                                                                                     0, 2, 8,}, //[22], would pass!!
-{"PORT_SCTP",                                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP,                                                                                                                                     0, 2, 2,}, //[21], would pass!!
-{"SCTP",                                         FLOW_KEY_TYPE_SCTP,                                                                                                                                                        0, 1, 0,}, //[20], would pass!!
-{"PORT_IPV4_IPV6_TCP_UDP",                       FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP,                                                                              0, 4, 34,}, //[1f], would pass!!
-{"IPV4_IPV6_TCP_UDP",                            FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP,                                                                                                 0, 3, 32,}, //[1e], would pass!!
-{"PORT_IPV6_TCP_UDP",                            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP,                                                                                                 0, 3, 34,}, //[1d], would pass!!
-{"IPV6_TCP_UDP",                                 FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP,                                                                                                                    0, 2, 32,}, //[1c], would pass!!
-{"PORT_IPV4_TCP_UDP",                            FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP,                                                                                                 0, 3, 10,}, //[1b], would pass!!
-{"IPV4_TCP_UDP",                                 FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP,                                                                                                                    0, 2, 8,}, //[1a], would pass!!
-{"PORT_TCP_UDP",                                 FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP,                                                                                                                    0, 2, 2,}, //[19], would pass!!
-{"TCP_UDP",                                      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP,                                                                                                                                       0, 1, 0,}, //[18], would pass!!
-{"PORT_IPV4_IPV6_UDP",                           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP,                                                                                                0, 4, 34,}, //[17], would pass!!
-{"IPV4_IPV6_UDP",                                FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP,                                                                                                                   0, 3, 32,}, //[16], would pass!!
-{"PORT_IPV6_UDP",                                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP,                                                                                                                   0, 3, 34,}, //[15], would pass!!
-{"IPV6_UDP",                                     FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP,                                                                                                                                      0, 2, 32,}, //[14], would pass!!
-{"PORT_IPV4_UDP",                                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP,                                                                                                                   0, 3, 10,}, //[13], would pass!!
-{"IPV4_UDP",                                     FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP,                                                                                                                                      0, 2, 8,}, //[12], would pass!!
-{"PORT_UDP",                                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP,                                                                                                                                      0, 2, 2,}, //[11], would pass!!
-{"UDP",                                          FLOW_KEY_TYPE_UDP,                                                                                                                                                         0, 1, 0,}, //[10], would pass!!
-{"PORT_IPV4_IPV6_TCP",                           FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP,                                                                                                0, 4, 34,}, //[f], would pass!!
-{"IPV4_IPV6_TCP",                                FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP,                                                                                                                   0, 3, 32,}, //[e], would pass!!
-{"PORT_IPV6_TCP",                                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP,                                                                                                                   0, 3, 34,}, //[d], would pass!!
-{"IPV6_TCP",                                     FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP,                                                                                                                                      0, 2, 32,}, //[c], would pass!!
-{"PORT_IPV4_TCP",                                FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP,                                                                                                                   0, 3, 10,}, //[b], would pass!!
-{"IPV4_TCP",                                     FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP,                                                                                                                                      0, 2, 8,}, //[a], would pass!!
-{"PORT_TCP",                                     FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP,                                                                                                                                      0, 2, 2,}, //[9], would pass!!
-{"TCP",                                          FLOW_KEY_TYPE_TCP,                                                                                                                                                         0, 1, 0,}, //[8], would pass!!
-{"PORT_IPV4_IPV6",                               FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6,                                                                                                                  0, 3, 2,}, //[7], would pass!!
-{"IPV4_IPV6",                                    FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6,                                                                                                                                     0, 2, 0,}, //[6], would pass!!
-{"PORT_IPV6",                                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6,                                                                                                                                     0, 2, 2,}, //[5], would pass!!
-{"IPV6",                                         FLOW_KEY_TYPE_IPV6,                                                                                                                                                        0, 1, 0,}, //[4], would pass!!
-{"PORT_IPV4",                                    FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4,                                                                                                                                     0, 2, 2,}, //[3], would pass!!
-{"IPV4",                                         FLOW_KEY_TYPE_IPV4,                                                                                                                                                        0, 1, 0,}, //[2], would pass!!
-{"PORT",                                         FLOW_KEY_TYPE_PORT,                                                                                                                                                        0, 1, 0,}, //[1], would pass!!
+static int
+PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1ff], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1fe], fail
+}
+
+static int
+PORT_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1fd], fail
+}
+
+static int
+IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1fc], fail
+}
+
+static int
+PORT_IPV4_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1fb], fail
+}
+
+static int
+IPV4_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 18, NULL, NULL); //[1fa], would pass!!
+}
+
+static int
+PORT_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 12, NULL, NULL); //[1f9], would pass!!
+}
+
+static int
+TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 10, NULL, NULL); //[1f8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1f7], fail
+}
+
+static int
+IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1f6], fail
+}
+
+static int
+PORT_IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1f5], fail
+}
+
+static int
+IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1f4], fail
+}
+
+static int
+PORT_IPV4_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1f3], fail
+}
+
+static int
+IPV4_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 18, NULL, NULL); //[1f2], would pass!!
+}
+
+static int
+PORT_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 12, NULL, NULL); //[1f1], would pass!!
+}
+
+static int
+UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 10, NULL, NULL); //[1f0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1ef], fail
+}
+
+static int
+IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1ee], fail
+}
+
+static int
+PORT_IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1ed], fail
+}
+
+static int
+IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1ec], fail
+}
+
+static int
+PORT_IPV4_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1eb], fail
+}
+
+static int
+IPV4_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 18, NULL, NULL); //[1ea], would pass!!
+}
+
+static int
+PORT_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 12, NULL, NULL); //[1e9], would pass!!
+}
+
+static int
+TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 10, NULL, NULL); //[1e8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1e7], fail
+}
+
+static int
+IPV4_IPV6_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1e6], fail
+}
+
+static int
+PORT_IPV6_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1e5], fail
+}
+
+static int
+IPV6_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1e4], fail
+}
+
+static int
+PORT_IPV4_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1e3], fail
+}
+
+static int
+IPV4_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 18, NULL, NULL); //[1e2], would pass!!
+}
+
+static int
+PORT_SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 12, NULL, NULL); //[1e1], would pass!!
+}
+
+static int
+SCTP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 10, NULL, NULL); //[1e0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1df], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1de], fail
+}
+
+static int
+PORT_IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1dd], fail
+}
+
+static int
+IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1dc], fail
+}
+
+static int
+PORT_IPV4_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1db], fail
+}
+
+static int
+IPV4_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 18, NULL, NULL); //[1da], would pass!!
+}
+
+static int
+PORT_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 12, NULL, NULL); //[1d9], would pass!!
+}
+
+static int
+TCP_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 10, NULL, NULL); //[1d8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1d7], fail
+}
+
+static int
+IPV4_IPV6_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1d6], fail
+}
+
+static int
+PORT_IPV6_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1d5], fail
+}
+
+static int
+IPV6_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1d4], fail
+}
+
+static int
+PORT_IPV4_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1d3], fail
+}
+
+static int
+IPV4_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 18, NULL, NULL); //[1d2], would pass!!
+}
+
+static int
+PORT_UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 12, NULL, NULL); //[1d1], would pass!!
+}
+
+static int
+UDP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 10, NULL, NULL); //[1d0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1cf], fail
+}
+
+static int
+IPV4_IPV6_TCP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1ce], fail
+}
+
+static int
+PORT_IPV6_TCP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1cd], fail
+}
+
+static int
+IPV6_TCP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1cc], fail
+}
+
+static int
+PORT_IPV4_TCP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1cb], fail
+}
+
+static int
+IPV4_TCP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 18, NULL, NULL); //[1ca], would pass!!
+}
+
+static int
+PORT_TCP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 12, NULL, NULL); //[1c9], would pass!!
+}
+
+static int
+TCP_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 10, NULL, NULL); //[1c8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1c7], fail
+}
+
+static int
+IPV4_IPV6_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1c6], fail
+}
+
+static int
+PORT_IPV6_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1c5], fail
+}
+
+static int
+IPV6_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1c4], fail
+}
+
+static int
+PORT_IPV4_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 16, NULL, NULL); //[1c3], would pass!!
+}
+
+static int
+IPV4_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 14, NULL, NULL); //[1c2], would pass!!
+}
+
+static int
+PORT_NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 8, NULL, NULL); //[1c1], would pass!!
+}
+
+static int
+NVGRE_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 6, NULL, NULL); //[1c0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1bf], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1be], fail
+}
+
+static int
+PORT_IPV6_TCP_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1bd], fail
+}
+
+static int
+IPV6_TCP_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1bc], fail
+}
+
+static int
+PORT_IPV4_TCP_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[1bb], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[1ba], would pass!!
+}
+
+static int
+PORT_TCP_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[1b9], would pass!!
+}
+
+static int
+TCP_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[1b8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1b7], fail
+}
+
+static int
+IPV4_IPV6_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1b6], fail
+}
+
+static int
+PORT_IPV6_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1b5], fail
+}
+
+static int
+IPV6_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1b4], fail
+}
+
+static int
+PORT_IPV4_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[1b3], would pass!!
+}
+
+static int
+IPV4_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[1b2], would pass!!
+}
+
+static int
+PORT_UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[1b1], would pass!!
+}
+
+static int
+UDP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[1b0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1af], fail
+}
+
+static int
+IPV4_IPV6_TCP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1ae], fail
+}
+
+static int
+PORT_IPV6_TCP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1ad], fail
+}
+
+static int
+IPV6_TCP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1ac], fail
+}
+
+static int
+PORT_IPV4_TCP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[1ab], would pass!!
+}
+
+static int
+IPV4_TCP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[1aa], would pass!!
+}
+
+static int
+PORT_TCP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[1a9], would pass!!
+}
+
+static int
+TCP_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[1a8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1a7], fail
+}
+
+static int
+IPV4_IPV6_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1a6], fail
+}
+
+static int
+PORT_IPV6_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1a5], fail
+}
+
+static int
+IPV6_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[1a4], fail
+}
+
+static int
+PORT_IPV4_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[1a3], would pass!!
+}
+
+static int
+IPV4_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[1a2], would pass!!
+}
+
+static int
+PORT_SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[1a1], would pass!!
+}
+
+static int
+SCTP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[1a0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[19f], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[19e], fail
+}
+
+static int
+PORT_IPV6_TCP_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[19d], fail
+}
+
+static int
+IPV6_TCP_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[19c], fail
+}
+
+static int
+PORT_IPV4_TCP_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[19b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[19a], would pass!!
+}
+
+static int
+PORT_TCP_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[199], would pass!!
+}
+
+static int
+TCP_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[198], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[197], fail
+}
+
+static int
+IPV4_IPV6_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[196], fail
+}
+
+static int
+PORT_IPV6_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[195], fail
+}
+
+static int
+IPV6_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[194], fail
+}
+
+static int
+PORT_IPV4_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[193], would pass!!
+}
+
+static int
+IPV4_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[192], would pass!!
+}
+
+static int
+PORT_UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[191], would pass!!
+}
+
+static int
+UDP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[190], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[18f], fail
+}
+
+static int
+IPV4_IPV6_TCP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[18e], fail
+}
+
+static int
+PORT_IPV6_TCP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[18d], fail
+}
+
+static int
+IPV6_TCP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[18c], fail
+}
+
+static int
+PORT_IPV4_TCP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[18b], would pass!!
+}
+
+static int
+IPV4_TCP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[18a], would pass!!
+}
+
+static int
+PORT_TCP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[189], would pass!!
+}
+
+static int
+TCP_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[188], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[187], fail
+}
+
+static int
+IPV4_IPV6_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 35, NULL, NULL); //[186], would pass!!
+}
+
+static int
+PORT_IPV6_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[185], fail
+}
+
+static int
+IPV6_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 35, NULL, NULL); //[184], would pass!!
+}
+
+static int
+PORT_IPV4_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 4, 13, NULL, NULL); //[183], would pass!!
+}
+
+static int
+IPV4_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 11, NULL, NULL); //[182], would pass!!
+}
+
+static int
+PORT_VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 3, 5, NULL, NULL); //[181], would pass!!
+}
+
+static int
+VXLAN_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE, 0, 2, 3, NULL, NULL); //[180], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[17f], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[17e], fail
+}
+
+static int
+PORT_IPV6_TCP_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[17d], fail
+}
+
+static int
+IPV6_TCP_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[17c], fail
+}
+
+static int
+PORT_IPV4_TCP_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[17b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[17a], would pass!!
+}
+
+static int
+PORT_TCP_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[179], would pass!!
+}
+
+static int
+TCP_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[178], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[177], fail
+}
+
+static int
+IPV4_IPV6_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[176], fail
+}
+
+static int
+PORT_IPV6_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[175], fail
+}
+
+static int
+IPV6_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[174], fail
+}
+
+static int
+PORT_IPV4_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[173], would pass!!
+}
+
+static int
+IPV4_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[172], would pass!!
+}
+
+static int
+PORT_UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[171], would pass!!
+}
+
+static int
+UDP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[170], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[16f], fail
+}
+
+static int
+IPV4_IPV6_TCP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[16e], fail
+}
+
+static int
+PORT_IPV6_TCP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[16d], fail
+}
+
+static int
+IPV6_TCP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[16c], fail
+}
+
+static int
+PORT_IPV4_TCP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[16b], would pass!!
+}
+
+static int
+IPV4_TCP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[16a], would pass!!
+}
+
+static int
+PORT_TCP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[169], would pass!!
+}
+
+static int
+TCP_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[168], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[167], fail
+}
+
+static int
+IPV4_IPV6_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[166], fail
+}
+
+static int
+PORT_IPV6_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[165], fail
+}
+
+static int
+IPV6_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[164], fail
+}
+
+static int
+PORT_IPV4_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[163], would pass!!
+}
+
+static int
+IPV4_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[162], would pass!!
+}
+
+static int
+PORT_SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[161], would pass!!
+}
+
+static int
+SCTP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[160], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[15f], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[15e], fail
+}
+
+static int
+PORT_IPV6_TCP_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[15d], fail
+}
+
+static int
+IPV6_TCP_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[15c], fail
+}
+
+static int
+PORT_IPV4_TCP_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[15b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[15a], would pass!!
+}
+
+static int
+PORT_TCP_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[159], would pass!!
+}
+
+static int
+TCP_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[158], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[157], fail
+}
+
+static int
+IPV4_IPV6_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[156], fail
+}
+
+static int
+PORT_IPV6_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[155], fail
+}
+
+static int
+IPV6_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[154], fail
+}
+
+static int
+PORT_IPV4_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[153], would pass!!
+}
+
+static int
+IPV4_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[152], would pass!!
+}
+
+static int
+PORT_UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[151], would pass!!
+}
+
+static int
+UDP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[150], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[14f], fail
+}
+
+static int
+IPV4_IPV6_TCP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[14e], fail
+}
+
+static int
+PORT_IPV6_TCP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[14d], fail
+}
+
+static int
+IPV6_TCP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[14c], fail
+}
+
+static int
+PORT_IPV4_TCP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 5, 17, NULL, NULL); //[14b], would pass!!
+}
+
+static int
+IPV4_TCP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 15, NULL, NULL); //[14a], would pass!!
+}
+
+static int
+PORT_TCP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 9, NULL, NULL); //[149], would pass!!
+}
+
+static int
+TCP_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 7, NULL, NULL); //[148], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[147], fail
+}
+
+static int
+IPV4_IPV6_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 35, NULL, NULL); //[146], would pass!!
+}
+
+static int
+PORT_IPV6_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[145], fail
+}
+
+static int
+IPV6_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 35, NULL, NULL); //[144], would pass!!
+}
+
+static int
+PORT_IPV4_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 4, 13, NULL, NULL); //[143], would pass!!
+}
+
+static int
+IPV4_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 11, NULL, NULL); //[142], would pass!!
+}
+
+static int
+PORT_NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 3, 5, NULL, NULL); //[141], would pass!!
+}
+
+static int
+NVGRE_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE, 0, 2, 3, NULL, NULL); //[140], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[13f], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 4, 36, NULL, NULL); //[13e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[13d], fail
+}
+
+static int
+IPV6_TCP_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 36, NULL, NULL); //[13c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 4, 14, NULL, NULL); //[13b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 12, NULL, NULL); //[13a], would pass!!
+}
+
+static int
+PORT_TCP_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 6, NULL, NULL); //[139], would pass!!
+}
+
+static int
+TCP_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 2, 4, NULL, NULL); //[138], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[137], fail
+}
+
+static int
+IPV4_IPV6_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 4, 36, NULL, NULL); //[136], would pass!!
+}
+
+static int
+PORT_IPV6_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[135], fail
+}
+
+static int
+IPV6_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 36, NULL, NULL); //[134], would pass!!
+}
+
+static int
+PORT_IPV4_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 4, 14, NULL, NULL); //[133], would pass!!
+}
+
+static int
+IPV4_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 12, NULL, NULL); //[132], would pass!!
+}
+
+static int
+PORT_UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 6, NULL, NULL); //[131], would pass!!
+}
+
+static int
+UDP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 2, 4, NULL, NULL); //[130], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[12f], fail
+}
+
+static int
+IPV4_IPV6_TCP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 4, 36, NULL, NULL); //[12e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[12d], fail
+}
+
+static int
+IPV6_TCP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 36, NULL, NULL); //[12c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 4, 14, NULL, NULL); //[12b], would pass!!
+}
+
+static int
+IPV4_TCP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 12, NULL, NULL); //[12a], would pass!!
+}
+
+static int
+PORT_TCP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 6, NULL, NULL); //[129], would pass!!
+}
+
+static int
+TCP_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 2, 4, NULL, NULL); //[128], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[127], fail
+}
+
+static int
+IPV4_IPV6_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 4, 36, NULL, NULL); //[126], would pass!!
+}
+
+static int
+PORT_IPV6_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[125], fail
+}
+
+static int
+IPV6_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 36, NULL, NULL); //[124], would pass!!
+}
+
+static int
+PORT_IPV4_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 4, 14, NULL, NULL); //[123], would pass!!
+}
+
+static int
+IPV4_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 12, NULL, NULL); //[122], would pass!!
+}
+
+static int
+PORT_SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 3, 6, NULL, NULL); //[121], would pass!!
+}
+
+static int
+SCTP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_GENEVE, 0, 2, 4, NULL, NULL); //[120], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[11f], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 4, 36, NULL, NULL); //[11e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[11d], fail
+}
+
+static int
+IPV6_TCP_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 3, 36, NULL, NULL); //[11c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 4, 14, NULL, NULL); //[11b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 3, 12, NULL, NULL); //[11a], would pass!!
+}
+
+static int
+PORT_TCP_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 3, 6, NULL, NULL); //[119], would pass!!
+}
+
+static int
+TCP_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 2, 4, NULL, NULL); //[118], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[117], fail
+}
+
+static int
+IPV4_IPV6_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 4, 36, NULL, NULL); //[116], would pass!!
+}
+
+static int
+PORT_IPV6_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[115], fail
+}
+
+static int
+IPV6_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 3, 36, NULL, NULL); //[114], would pass!!
+}
+
+static int
+PORT_IPV4_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 4, 14, NULL, NULL); //[113], would pass!!
+}
+
+static int
+IPV4_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 3, 12, NULL, NULL); //[112], would pass!!
+}
+
+static int
+PORT_UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 3, 6, NULL, NULL); //[111], would pass!!
+}
+
+static int
+UDP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_GENEVE, 0, 2, 4, NULL, NULL); //[110], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[10f], fail
+}
+
+static int
+IPV4_IPV6_TCP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE, 0, 4, 36, NULL, NULL); //[10e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE, 1, 5, 42, NULL, NULL); //[10d], fail
+}
+
+static int
+IPV6_TCP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE, 0, 3, 36, NULL, NULL); //[10c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE, 0, 4, 14, NULL, NULL); //[10b], would pass!!
+}
+
+static int
+IPV4_TCP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE, 0, 3, 12, NULL, NULL); //[10a], would pass!!
+}
+
+static int
+PORT_TCP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE, 0, 3, 6, NULL, NULL); //[109], would pass!!
+}
+
+static int
+TCP_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_GENEVE, 0, 2, 4, NULL, NULL); //[108], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_GENEVE, 0, 4, 34, NULL, NULL); //[107], would pass!!
+}
+
+static int
+IPV4_IPV6_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_GENEVE, 0, 3, 32, NULL, NULL); //[106], would pass!!
+}
+
+static int
+PORT_IPV6_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_GENEVE, 0, 3, 34, NULL, NULL); //[105], would pass!!
+}
+
+static int
+IPV6_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_GENEVE, 0, 2, 32, NULL, NULL); //[104], would pass!!
+}
+
+static int
+PORT_IPV4_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_GENEVE, 0, 3, 10, NULL, NULL); //[103], would pass!!
+}
+
+static int
+IPV4_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_GENEVE, 0, 2, 8, NULL, NULL); //[102], would pass!!
+}
+
+static int
+PORT_GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_GENEVE, 0, 2, 2, NULL, NULL); //[101], would pass!!
+}
+
+static int
+GENEVE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_GENEVE, 0, 1, 0, NULL, NULL); //[100], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[ff], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[fe], fail
+}
+
+static int
+PORT_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[fd], fail
+}
+
+static int
+IPV6_TCP_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[fc], fail
+}
+
+static int
+PORT_IPV4_TCP_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 5, 17, NULL, NULL); //[fb], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 15, NULL, NULL); //[fa], would pass!!
+}
+
+static int
+PORT_TCP_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 9, NULL, NULL); //[f9], would pass!!
+}
+
+static int
+TCP_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 7, NULL, NULL); //[f8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[f7], fail
+}
+
+static int
+IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[f6], fail
+}
+
+static int
+PORT_IPV6_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[f5], fail
+}
+
+static int
+IPV6_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[f4], fail
+}
+
+static int
+PORT_IPV4_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 5, 17, NULL, NULL); //[f3], would pass!!
+}
+
+static int
+IPV4_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 15, NULL, NULL); //[f2], would pass!!
+}
+
+static int
+PORT_UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 9, NULL, NULL); //[f1], would pass!!
+}
+
+static int
+UDP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 7, NULL, NULL); //[f0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[ef], fail
+}
+
+static int
+IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[ee], fail
+}
+
+static int
+PORT_IPV6_TCP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[ed], fail
+}
+
+static int
+IPV6_TCP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[ec], fail
+}
+
+static int
+PORT_IPV4_TCP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 5, 17, NULL, NULL); //[eb], would pass!!
+}
+
+static int
+IPV4_TCP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 15, NULL, NULL); //[ea], would pass!!
+}
+
+static int
+PORT_TCP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 9, NULL, NULL); //[e9], would pass!!
+}
+
+static int
+TCP_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 7, NULL, NULL); //[e8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[e7], fail
+}
+
+static int
+IPV4_IPV6_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[e6], fail
+}
+
+static int
+PORT_IPV6_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[e5], fail
+}
+
+static int
+IPV6_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[e4], fail
+}
+
+static int
+PORT_IPV4_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 5, 17, NULL, NULL); //[e3], would pass!!
+}
+
+static int
+IPV4_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 15, NULL, NULL); //[e2], would pass!!
+}
+
+static int
+PORT_SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 9, NULL, NULL); //[e1], would pass!!
+}
+
+static int
+SCTP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 7, NULL, NULL); //[e0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[df], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[de], fail
+}
+
+static int
+PORT_IPV6_TCP_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[dd], fail
+}
+
+static int
+IPV6_TCP_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[dc], fail
+}
+
+static int
+PORT_IPV4_TCP_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 5, 17, NULL, NULL); //[db], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 15, NULL, NULL); //[da], would pass!!
+}
+
+static int
+PORT_TCP_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 9, NULL, NULL); //[d9], would pass!!
+}
+
+static int
+TCP_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 7, NULL, NULL); //[d8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[d7], fail
+}
+
+static int
+IPV4_IPV6_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[d6], fail
+}
+
+static int
+PORT_IPV6_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[d5], fail
+}
+
+static int
+IPV6_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[d4], fail
+}
+
+static int
+PORT_IPV4_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 5, 17, NULL, NULL); //[d3], would pass!!
+}
+
+static int
+IPV4_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 15, NULL, NULL); //[d2], would pass!!
+}
+
+static int
+PORT_UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 9, NULL, NULL); //[d1], would pass!!
+}
+
+static int
+UDP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 7, NULL, NULL); //[d0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[cf], fail
+}
+
+static int
+IPV4_IPV6_TCP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[ce], fail
+}
+
+static int
+PORT_IPV6_TCP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[cd], fail
+}
+
+static int
+IPV6_TCP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[cc], fail
+}
+
+static int
+PORT_IPV4_TCP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 5, 17, NULL, NULL); //[cb], would pass!!
+}
+
+static int
+IPV4_TCP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 15, NULL, NULL); //[ca], would pass!!
+}
+
+static int
+PORT_TCP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 9, NULL, NULL); //[c9], would pass!!
+}
+
+static int
+TCP_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 7, NULL, NULL); //[c8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[c7], fail
+}
+
+static int
+IPV4_IPV6_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 35, NULL, NULL); //[c6], would pass!!
+}
+
+static int
+PORT_IPV6_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[c5], fail
+}
+
+static int
+IPV6_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 35, NULL, NULL); //[c4], would pass!!
+}
+
+static int
+PORT_IPV4_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 4, 13, NULL, NULL); //[c3], would pass!!
+}
+
+static int
+IPV4_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 11, NULL, NULL); //[c2], would pass!!
+}
+
+static int
+PORT_NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 3, 5, NULL, NULL); //[c1], would pass!!
+}
+
+static int
+NVGRE_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN, 0, 2, 3, NULL, NULL); //[c0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[bf], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 4, 36, NULL, NULL); //[be], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[bd], fail
+}
+
+static int
+IPV6_TCP_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 36, NULL, NULL); //[bc], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 4, 14, NULL, NULL); //[bb], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 12, NULL, NULL); //[ba], would pass!!
+}
+
+static int
+PORT_TCP_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 6, NULL, NULL); //[b9], would pass!!
+}
+
+static int
+TCP_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 2, 4, NULL, NULL); //[b8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[b7], fail
+}
+
+static int
+IPV4_IPV6_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 4, 36, NULL, NULL); //[b6], would pass!!
+}
+
+static int
+PORT_IPV6_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[b5], fail
+}
+
+static int
+IPV6_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 36, NULL, NULL); //[b4], would pass!!
+}
+
+static int
+PORT_IPV4_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 4, 14, NULL, NULL); //[b3], would pass!!
+}
+
+static int
+IPV4_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 12, NULL, NULL); //[b2], would pass!!
+}
+
+static int
+PORT_UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 6, NULL, NULL); //[b1], would pass!!
+}
+
+static int
+UDP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 2, 4, NULL, NULL); //[b0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[af], fail
+}
+
+static int
+IPV4_IPV6_TCP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 4, 36, NULL, NULL); //[ae], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[ad], fail
+}
+
+static int
+IPV6_TCP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 36, NULL, NULL); //[ac], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 4, 14, NULL, NULL); //[ab], would pass!!
+}
+
+static int
+IPV4_TCP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 12, NULL, NULL); //[aa], would pass!!
+}
+
+static int
+PORT_TCP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 6, NULL, NULL); //[a9], would pass!!
+}
+
+static int
+TCP_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 2, 4, NULL, NULL); //[a8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[a7], fail
+}
+
+static int
+IPV4_IPV6_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 4, 36, NULL, NULL); //[a6], would pass!!
+}
+
+static int
+PORT_IPV6_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[a5], fail
+}
+
+static int
+IPV6_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 36, NULL, NULL); //[a4], would pass!!
+}
+
+static int
+PORT_IPV4_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 4, 14, NULL, NULL); //[a3], would pass!!
+}
+
+static int
+IPV4_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 12, NULL, NULL); //[a2], would pass!!
+}
+
+static int
+PORT_SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 3, 6, NULL, NULL); //[a1], would pass!!
+}
+
+static int
+SCTP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN, 0, 2, 4, NULL, NULL); //[a0], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[9f], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 4, 36, NULL, NULL); //[9e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[9d], fail
+}
+
+static int
+IPV6_TCP_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 3, 36, NULL, NULL); //[9c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 4, 14, NULL, NULL); //[9b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 3, 12, NULL, NULL); //[9a], would pass!!
+}
+
+static int
+PORT_TCP_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 3, 6, NULL, NULL); //[99], would pass!!
+}
+
+static int
+TCP_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 2, 4, NULL, NULL); //[98], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[97], fail
+}
+
+static int
+IPV4_IPV6_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 4, 36, NULL, NULL); //[96], would pass!!
+}
+
+static int
+PORT_IPV6_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[95], fail
+}
+
+static int
+IPV6_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 3, 36, NULL, NULL); //[94], would pass!!
+}
+
+static int
+PORT_IPV4_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 4, 14, NULL, NULL); //[93], would pass!!
+}
+
+static int
+IPV4_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 3, 12, NULL, NULL); //[92], would pass!!
+}
+
+static int
+PORT_UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 3, 6, NULL, NULL); //[91], would pass!!
+}
+
+static int
+UDP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN, 0, 2, 4, NULL, NULL); //[90], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[8f], fail
+}
+
+static int
+IPV4_IPV6_TCP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN, 0, 4, 36, NULL, NULL); //[8e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN, 1, 5, 42, NULL, NULL); //[8d], fail
+}
+
+static int
+IPV6_TCP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN, 0, 3, 36, NULL, NULL); //[8c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN, 0, 4, 14, NULL, NULL); //[8b], would pass!!
+}
+
+static int
+IPV4_TCP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN, 0, 3, 12, NULL, NULL); //[8a], would pass!!
+}
+
+static int
+PORT_TCP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN, 0, 3, 6, NULL, NULL); //[89], would pass!!
+}
+
+static int
+TCP_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN, 0, 2, 4, NULL, NULL); //[88], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN, 0, 4, 34, NULL, NULL); //[87], would pass!!
+}
+
+static int
+IPV4_IPV6_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN, 0, 3, 32, NULL, NULL); //[86], would pass!!
+}
+
+static int
+PORT_IPV6_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN, 0, 3, 34, NULL, NULL); //[85], would pass!!
+}
+
+static int
+IPV6_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN, 0, 2, 32, NULL, NULL); //[84], would pass!!
+}
+
+static int
+PORT_IPV4_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_VXLAN, 0, 3, 10, NULL, NULL); //[83], would pass!!
+}
+
+static int
+IPV4_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_VXLAN, 0, 2, 8, NULL, NULL); //[82], would pass!!
+}
+
+static int
+PORT_VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_VXLAN, 0, 2, 2, NULL, NULL); //[81], would pass!!
+}
+
+static int
+VXLAN(void)
+{
+	return result_checker(FLOW_KEY_TYPE_VXLAN, 0, 1, 0, NULL, NULL); //[80], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[7f], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 4, 36, NULL, NULL); //[7e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[7d], fail
+}
+
+static int
+IPV6_TCP_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 36, NULL, NULL); //[7c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 4, 14, NULL, NULL); //[7b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 12, NULL, NULL); //[7a], would pass!!
+}
+
+static int
+PORT_TCP_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 6, NULL, NULL); //[79], would pass!!
+}
+
+static int
+TCP_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 2, 4, NULL, NULL); //[78], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[77], fail
+}
+
+static int
+IPV4_IPV6_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 4, 36, NULL, NULL); //[76], would pass!!
+}
+
+static int
+PORT_IPV6_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[75], fail
+}
+
+static int
+IPV6_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 36, NULL, NULL); //[74], would pass!!
+}
+
+static int
+PORT_IPV4_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 4, 14, NULL, NULL); //[73], would pass!!
+}
+
+static int
+IPV4_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 12, NULL, NULL); //[72], would pass!!
+}
+
+static int
+PORT_UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 6, NULL, NULL); //[71], would pass!!
+}
+
+static int
+UDP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 2, 4, NULL, NULL); //[70], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[6f], fail
+}
+
+static int
+IPV4_IPV6_TCP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 4, 36, NULL, NULL); //[6e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[6d], fail
+}
+
+static int
+IPV6_TCP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 36, NULL, NULL); //[6c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 4, 14, NULL, NULL); //[6b], would pass!!
+}
+
+static int
+IPV4_TCP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 12, NULL, NULL); //[6a], would pass!!
+}
+
+static int
+PORT_TCP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 6, NULL, NULL); //[69], would pass!!
+}
+
+static int
+TCP_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 2, 4, NULL, NULL); //[68], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[67], fail
+}
+
+static int
+IPV4_IPV6_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 4, 36, NULL, NULL); //[66], would pass!!
+}
+
+static int
+PORT_IPV6_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[65], fail
+}
+
+static int
+IPV6_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 36, NULL, NULL); //[64], would pass!!
+}
+
+static int
+PORT_IPV4_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 4, 14, NULL, NULL); //[63], would pass!!
+}
+
+static int
+IPV4_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 12, NULL, NULL); //[62], would pass!!
+}
+
+static int
+PORT_SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 3, 6, NULL, NULL); //[61], would pass!!
+}
+
+static int
+SCTP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE, 0, 2, 4, NULL, NULL); //[60], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[5f], fail
+}
+
+static int
+IPV4_IPV6_TCP_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 4, 36, NULL, NULL); //[5e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[5d], fail
+}
+
+static int
+IPV6_TCP_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 3, 36, NULL, NULL); //[5c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 4, 14, NULL, NULL); //[5b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 3, 12, NULL, NULL); //[5a], would pass!!
+}
+
+static int
+PORT_TCP_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 3, 6, NULL, NULL); //[59], would pass!!
+}
+
+static int
+TCP_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 2, 4, NULL, NULL); //[58], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[57], fail
+}
+
+static int
+IPV4_IPV6_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 4, 36, NULL, NULL); //[56], would pass!!
+}
+
+static int
+PORT_IPV6_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[55], fail
+}
+
+static int
+IPV6_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 3, 36, NULL, NULL); //[54], would pass!!
+}
+
+static int
+PORT_IPV4_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 4, 14, NULL, NULL); //[53], would pass!!
+}
+
+static int
+IPV4_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 3, 12, NULL, NULL); //[52], would pass!!
+}
+
+static int
+PORT_UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 3, 6, NULL, NULL); //[51], would pass!!
+}
+
+static int
+UDP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE, 0, 2, 4, NULL, NULL); //[50], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[4f], fail
+}
+
+static int
+IPV4_IPV6_TCP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE, 0, 4, 36, NULL, NULL); //[4e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE, 1, 5, 42, NULL, NULL); //[4d], fail
+}
+
+static int
+IPV6_TCP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE, 0, 3, 36, NULL, NULL); //[4c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE, 0, 4, 14, NULL, NULL); //[4b], would pass!!
+}
+
+static int
+IPV4_TCP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE, 0, 3, 12, NULL, NULL); //[4a], would pass!!
+}
+
+static int
+PORT_TCP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE, 0, 3, 6, NULL, NULL); //[49], would pass!!
+}
+
+static int
+TCP_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE, 0, 2, 4, NULL, NULL); //[48], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE, 0, 4, 34, NULL, NULL); //[47], would pass!!
+}
+
+static int
+IPV4_IPV6_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE, 0, 3, 32, NULL, NULL); //[46], would pass!!
+}
+
+static int
+PORT_IPV6_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE, 0, 3, 34, NULL, NULL); //[45], would pass!!
+}
+
+static int
+IPV6_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE, 0, 2, 32, NULL, NULL); //[44], would pass!!
+}
+
+static int
+PORT_IPV4_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE, 0, 3, 10, NULL, NULL); //[43], would pass!!
+}
+
+static int
+IPV4_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_NVGRE, 0, 2, 8, NULL, NULL); //[42], would pass!!
+}
+
+static int
+PORT_NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_NVGRE, 0, 2, 2, NULL, NULL); //[41], would pass!!
+}
+
+static int
+NVGRE(void)
+{
+	return result_checker(FLOW_KEY_TYPE_NVGRE, 0, 1, 0, NULL, NULL); //[40], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 4, 34, NULL, NULL); //[3f], would pass!!
+}
+
+static int
+IPV4_IPV6_TCP_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 3, 32, NULL, NULL); //[3e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 3, 34, NULL, NULL); //[3d], would pass!!
+}
+
+static int
+IPV6_TCP_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 2, 32, NULL, NULL); //[3c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 3, 10, NULL, NULL); //[3b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 2, 8, NULL, NULL); //[3a], would pass!!
+}
+
+static int
+PORT_TCP_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 2, 2, NULL, NULL); //[39], would pass!!
+}
+
+static int
+TCP_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 1, 0, NULL, NULL); //[38], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 4, 34, NULL, NULL); //[37], would pass!!
+}
+
+static int
+IPV4_IPV6_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 3, 32, NULL, NULL); //[36], would pass!!
+}
+
+static int
+PORT_IPV6_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 3, 34, NULL, NULL); //[35], would pass!!
+}
+
+static int
+IPV6_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 2, 32, NULL, NULL); //[34], would pass!!
+}
+
+static int
+PORT_IPV4_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 3, 10, NULL, NULL); //[33], would pass!!
+}
+
+static int
+IPV4_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 2, 8, NULL, NULL); //[32], would pass!!
+}
+
+static int
+PORT_UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 2, 2, NULL, NULL); //[31], would pass!!
+}
+
+static int
+UDP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP, 0, 1, 0, NULL, NULL); //[30], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP, 0, 4, 34, NULL, NULL); //[2f], would pass!!
+}
+
+static int
+IPV4_IPV6_TCP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP, 0, 3, 32, NULL, NULL); //[2e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP, 0, 3, 34, NULL, NULL); //[2d], would pass!!
+}
+
+static int
+IPV6_TCP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP, 0, 2, 32, NULL, NULL); //[2c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP, 0, 3, 10, NULL, NULL); //[2b], would pass!!
+}
+
+static int
+IPV4_TCP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP, 0, 2, 8, NULL, NULL); //[2a], would pass!!
+}
+
+static int
+PORT_TCP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP, 0, 2, 2, NULL, NULL); //[29], would pass!!
+}
+
+static int
+TCP_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP, 0, 1, 0, NULL, NULL); //[28], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP, 0, 4, 34, NULL, NULL); //[27], would pass!!
+}
+
+static int
+IPV4_IPV6_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP, 0, 3, 32, NULL, NULL); //[26], would pass!!
+}
+
+static int
+PORT_IPV6_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP, 0, 3, 34, NULL, NULL); //[25], would pass!!
+}
+
+static int
+IPV6_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP, 0, 2, 32, NULL, NULL); //[24], would pass!!
+}
+
+static int
+PORT_IPV4_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP, 0, 3, 10, NULL, NULL); //[23], would pass!!
+}
+
+static int
+IPV4_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP, 0, 2, 8, NULL, NULL); //[22], would pass!!
+}
+
+static int
+PORT_SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_SCTP, 0, 2, 2, NULL, NULL); //[21], would pass!!
+}
+
+static int
+SCTP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_SCTP, 0, 1, 0, NULL, NULL); //[20], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP, 0, 4, 34, NULL, NULL); //[1f], would pass!!
+}
+
+static int
+IPV4_IPV6_TCP_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP, 0, 3, 32, NULL, NULL); //[1e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP, 0, 3, 34, NULL, NULL); //[1d], would pass!!
+}
+
+static int
+IPV6_TCP_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP, 0, 2, 32, NULL, NULL); //[1c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP, 0, 3, 10, NULL, NULL); //[1b], would pass!!
+}
+
+static int
+IPV4_TCP_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP, 0, 2, 8, NULL, NULL); //[1a], would pass!!
+}
+
+static int
+PORT_TCP_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP, 0, 2, 2, NULL, NULL); //[19], would pass!!
+}
+
+static int
+TCP_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP, 0, 1, 0, NULL, NULL); //[18], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP, 0, 4, 34, NULL, NULL); //[17], would pass!!
+}
+
+static int
+IPV4_IPV6_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP, 0, 3, 32, NULL, NULL); //[16], would pass!!
+}
+
+static int
+PORT_IPV6_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP, 0, 3, 34, NULL, NULL); //[15], would pass!!
+}
+
+static int
+IPV6_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP, 0, 2, 32, NULL, NULL); //[14], would pass!!
+}
+
+static int
+PORT_IPV4_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP, 0, 3, 10, NULL, NULL); //[13], would pass!!
+}
+
+static int
+IPV4_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP, 0, 2, 8, NULL, NULL); //[12], would pass!!
+}
+
+static int
+PORT_UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_UDP, 0, 2, 2, NULL, NULL); //[11], would pass!!
+}
+
+static int
+UDP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_UDP, 0, 1, 0, NULL, NULL); //[10], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6_TCP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP, 0, 4, 34, NULL, NULL); //[f], would pass!!
+}
+
+static int
+IPV4_IPV6_TCP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP, 0, 3, 32, NULL, NULL); //[e], would pass!!
+}
+
+static int
+PORT_IPV6_TCP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP, 0, 3, 34, NULL, NULL); //[d], would pass!!
+}
+
+static int
+IPV6_TCP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP, 0, 2, 32, NULL, NULL); //[c], would pass!!
+}
+
+static int
+PORT_IPV4_TCP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP, 0, 3, 10, NULL, NULL); //[b], would pass!!
+}
+
+static int
+IPV4_TCP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP, 0, 2, 8, NULL, NULL); //[a], would pass!!
+}
+
+static int
+PORT_TCP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_TCP, 0, 2, 2, NULL, NULL); //[9], would pass!!
+}
+
+static int
+TCP(void)
+{
+	return result_checker(FLOW_KEY_TYPE_TCP, 0, 1, 0, NULL, NULL); //[8], would pass!!
+}
+
+static int
+PORT_IPV4_IPV6(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6, 0, 3, 2, NULL, NULL); //[7], would pass!!
+}
+
+static int
+IPV4_IPV6(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6, 0, 2, 0, NULL, NULL); //[6], would pass!!
+}
+
+static int
+PORT_IPV6(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV6, 0, 2, 2, NULL, NULL); //[5], would pass!!
+}
+
+static int
+IPV6(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV6, 0, 1, 0, NULL, NULL); //[4], would pass!!
+}
+
+static int
+PORT_IPV4(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT|FLOW_KEY_TYPE_IPV4, 0, 2, 2, NULL, NULL); //[3], would pass!!
+}
+
+static int
+IPV4(void)
+{
+	return result_checker(FLOW_KEY_TYPE_IPV4, 0, 1, 0, NULL, NULL); //[2], would pass!!
+}
+
+static int
+PORT(void)
+{
+	return result_checker(FLOW_KEY_TYPE_PORT, 0, 1, 0, NULL, NULL); //[1], would pass!!
+}
+
