@@ -16,6 +16,7 @@
 #define FLOW_KEY_TYPE_SCTP     BIT(5)
 #define FLOW_KEY_TYPE_NVGRE    BIT(6)
 #define FLOW_KEY_TYPE_VXLAN    BIT(7)
+#define FLOW_KEY_TYPE_GENEVE   BIT(8)
 
 struct nix_rx_flowkey_alg {
 #if defined(__BIG_ENDIAN_BITFIELD)

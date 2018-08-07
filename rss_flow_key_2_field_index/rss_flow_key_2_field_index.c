@@ -52,6 +52,7 @@ enum npc_kpu_ld_ltype {
 	NPC_LT_LD_TU_MPLS,
 	NPC_LT_LD_NVGRE,
 	NPC_LT_LD_UDP_VXLAN,
+	NPC_LT_LD_UDP_GENEVE,
 };
 
 static inline int fls(uint32_t x)
@@ -180,6 +181,15 @@ set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 			field->bytesm1 = 2; /* VNI, 3 bytes */
 			field->ltype_match = NPC_LT_LD_UDP_VXLAN;
 			field->ltype_mask = 0xF; /* Match only VXLAN */
+			field_marker = true;
+			keyoff_marker = true;
+			break;
+		case FLOW_KEY_TYPE_GENEVE:
+			field->lid = NPC_LID_LD;
+			field->hdr_offset = 12; /* VNI at UDP header + 4B */
+			field->bytesm1 = 2; /* VNI, 3 bytes */
+			field->ltype_match = NPC_LT_LD_UDP_GENEVE;
+			field->ltype_mask = 0xF; /* Match only GENEVE */
 			field_marker = true;
 			keyoff_marker = true;
 			break;
