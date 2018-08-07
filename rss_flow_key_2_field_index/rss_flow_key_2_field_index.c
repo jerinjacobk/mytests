@@ -193,8 +193,8 @@ set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 			max_key_off = 0;
 		}
 	}
-
-	if (idx == max_bit_pos) /* Processed all the flow key types */
+	/* Processed all the flow key types */
+	if (idx == max_bit_pos && key_off < MAX_KEY_OFF)
 		return 0;
 	else
 		return NIX_AF_ERR_RSS_NOSPC_FIELD;
