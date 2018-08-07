@@ -87,15 +87,15 @@ result_checker(uint32_t flowkey_cfg, int expect_error,
 		return rc;
 
 	rc = find_empty_feilds_in_between((struct nix_rx_flowkey_alg *)field);
-	if (rc)
+	if (expect_error == 0 && rc)
 		return rc;
 
 	rc = get_nr_feilds((struct nix_rx_flowkey_alg *)field);
-	if (rc != expected_fields)
+	if (expect_error == 0 && rc != expected_fields)
 		return -ERANGE;
 
 	rc = get_last_key_offset((struct nix_rx_flowkey_alg *)field);
-	if (rc != expected_last_key_off)
+	if (expect_error == 0 && rc != expected_last_key_off)
 		return -EINVAL;
 
 	return 0;
@@ -155,6 +155,12 @@ IPV4__IPV6__TCP__UDP__NVGRE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV4 | FLOW_KEY_TYPE_IPV6 | FLOW_KEY_TYPE_TCP | FLOW_KEY_TYPE_UDP | FLOW_KEY_TYPE_NVGRE, 0, 4, 36);
 }
 
+static int
+PORT_IPV4__IPV6__TCP__UDP__NVGRE(void)
+{
+	return result_checker( FLOW_KEY_TYPE_PORT | FLOW_KEY_TYPE_IPV4 | FLOW_KEY_TYPE_IPV6 | FLOW_KEY_TYPE_TCP | FLOW_KEY_TYPE_UDP | FLOW_KEY_TYPE_NVGRE, 1, 5, 42);
+}
+
 struct otx2_test unit_tests[] = {
 	OTX2_TEST(IPV4__IPV6),
 	OTX2_TEST(IPV4__IPV6__TCP),
@@ -165,6 +171,7 @@ struct otx2_test unit_tests[] = {
 	OTX2_TEST(IPV4__IPV6__UDP__SCTP),
 	OTX2_TEST(IPV4__IPV6__TCP__UDP__SCTP),
 	OTX2_TEST(IPV4__IPV6__TCP__UDP__NVGRE),
+	OTX2_TEST(PORT_IPV4__IPV6__TCP__UDP__NVGRE),
 };
 
 
