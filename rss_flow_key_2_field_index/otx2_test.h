@@ -8,7 +8,7 @@
 
 typedef int (*test_fn)(void);
 
-#define OTX2_TEST_NAME_MAX 96
+#define OTX2_TEST_NAME_MAX 64
 
 struct otx2_test {
 	char name[OTX2_TEST_NAME_MAX];
