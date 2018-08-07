@@ -7,6 +7,17 @@
 #ifndef BIT
 #define BIT(nr)     (1UL << (nr))
 #endif
+enum {
+	PORT_VAL = 0,
+	IPV4,
+	IPV6,
+	TCP,
+	UDP,
+	SCTP,
+	NVGRE,
+	VXLAN,
+	GENEVE
+};
 
 #define FLOW_KEY_TYPE_PORT     BIT(0)
 #define FLOW_KEY_TYPE_IPV4     BIT(1)
