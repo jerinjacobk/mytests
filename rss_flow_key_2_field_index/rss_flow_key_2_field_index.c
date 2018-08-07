@@ -168,7 +168,7 @@ set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 			field->lid = NPC_LID_LD;
 			field->ltype_match = NPC_LT_LD_NVGRE;
 			field->hdr_offset = 4; /* VSID offset */
-			field->bytesm1 = 3; /* VSID + FlowID, 4 bytes */
+			field->bytesm1 = 2; /* VSID 3 bytes */
 			field->ltype_mask = 0xF; /* Match only NVGRE */
 			field_marker = true;
 			keyoff_marker = true;
