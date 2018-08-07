@@ -187,7 +187,7 @@ PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1ff], fail
+			      1, 7, 44); //[1ff], fail
 }
 
 static int
@@ -198,7 +198,7 @@ IPV4_IPV6_TCP_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1fe], fail
+			      1, 6, 42); //[1fe], fail
 }
 
 static int
@@ -271,7 +271,7 @@ PORT_IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1f7], fail
+			      1, 7, 44); //[1f7], fail
 }
 
 static int
@@ -281,7 +281,7 @@ IPV4_IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1f6], fail
+			      1, 6, 42); //[1f6], fail
 }
 
 static int
@@ -291,7 +291,7 @@ PORT_IPV6_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1f5], fail
+			      1, 6, 44); //[1f5], fail
 }
 
 static int
@@ -311,7 +311,7 @@ PORT_IPV4_UDP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1f3], fail
+			      1, 6, 20); //[1f3], fail
 }
 
 static int
@@ -351,7 +351,7 @@ PORT_IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1ef], fail
+			      1, 7, 44); //[1ef], fail
 }
 
 static int
@@ -361,7 +361,7 @@ IPV4_IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1ee], fail
+			      1, 6, 42); //[1ee], fail
 }
 
 static int
@@ -371,7 +371,7 @@ PORT_IPV6_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1ed], fail
+			      1, 6, 44); //[1ed], fail
 }
 
 static int
@@ -391,7 +391,7 @@ PORT_IPV4_TCP_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1eb], fail
+			      1, 6, 20); //[1eb], fail
 }
 
 static int
@@ -430,7 +430,7 @@ PORT_IPV4_IPV6_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1e7], fail
+			      1, 7, 44); //[1e7], fail
 }
 
 static int
@@ -440,7 +440,7 @@ IPV4_IPV6_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1e6], fail
+			      1, 6, 42); //[1e6], fail
 }
 
 static int
@@ -450,7 +450,7 @@ PORT_IPV6_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1e5], fail
+			      1, 6, 44); //[1e5], fail
 }
 
 static int
@@ -469,7 +469,7 @@ PORT_IPV4_SCTP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1e3], fail
+			      1, 6, 20); //[1e3], fail
 }
 
 static int
@@ -507,7 +507,7 @@ PORT_IPV4_IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1df], fail
+			      1, 7, 44); //[1df], fail
 }
 
 static int
@@ -517,7 +517,7 @@ IPV4_IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1de], fail
+			      1, 6, 42); //[1de], fail
 }
 
 static int
@@ -527,7 +527,7 @@ PORT_IPV6_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1dd], fail
+			      1, 6, 44); //[1dd], fail
 }
 
 static int
@@ -547,7 +547,7 @@ PORT_IPV4_TCP_UDP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1db], fail
+			      1, 6, 20); //[1db], fail
 }
 
 static int
@@ -586,7 +586,7 @@ PORT_IPV4_IPV6_UDP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1d7], fail
+			      1, 7, 44); //[1d7], fail
 }
 
 static int
@@ -596,7 +596,7 @@ IPV4_IPV6_UDP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1d6], fail
+			      1, 6, 42); //[1d6], fail
 }
 
 static int
@@ -606,7 +606,7 @@ PORT_IPV6_UDP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1d5], fail
+			      1, 6, 44); //[1d5], fail
 }
 
 static int
@@ -615,7 +615,7 @@ IPV6_UDP_NVGRE_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1d4], fail
+			      1, 6, 42); //[1d4], fail
 }
 
 static int
@@ -625,7 +625,7 @@ PORT_IPV4_UDP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1d3], fail
+			      1, 6, 20); //[1d3], fail
 }
 
 static int
@@ -662,7 +662,7 @@ PORT_IPV4_IPV6_TCP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1cf], fail
+			      1, 7, 44); //[1cf], fail
 }
 
 static int
@@ -672,7 +672,7 @@ IPV4_IPV6_TCP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1ce], fail
+			      1, 6, 42); //[1ce], fail
 }
 
 static int
@@ -682,7 +682,7 @@ PORT_IPV6_TCP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1cd], fail
+			      1, 6, 44); //[1cd], fail
 }
 
 static int
@@ -701,7 +701,7 @@ PORT_IPV4_TCP_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1cb], fail
+			      1, 6, 20); //[1cb], fail
 }
 
 static int
@@ -738,7 +738,7 @@ PORT_IPV4_IPV6_NVGRE_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1c7], fail
+			      1, 6, 40); //[1c7], fail
 }
 
 static int
@@ -747,7 +747,7 @@ IPV4_IPV6_NVGRE_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV4|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1c6], fail
+			      1, 5, 38); //[1c6], fail
 }
 
 static int
@@ -756,7 +756,7 @@ PORT_IPV6_NVGRE_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1c5], fail
+			      1, 5, 40); //[1c5], fail
 }
 
 static int
@@ -765,7 +765,7 @@ IPV6_NVGRE_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1c4], fail
+			      1, 5, 38); //[1c4], fail
 }
 
 static int
@@ -794,7 +794,7 @@ PORT_IPV4_IPV6_TCP_UDP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1bf], fail
+			      1, 6, 41); //[1bf], fail
 }
 
 static int
@@ -804,7 +804,7 @@ IPV4_IPV6_TCP_UDP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1be], fail
+			      1, 5, 39); //[1be], fail
 }
 
 static int
@@ -814,7 +814,7 @@ PORT_IPV6_TCP_UDP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1bd], fail
+			      1, 5, 41); //[1bd], fail
 }
 
 static int
@@ -824,7 +824,7 @@ IPV6_TCP_UDP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1bc], fail
+			      1, 4, 39); //[1bc], fail
 }
 
 static int
@@ -873,7 +873,7 @@ PORT_IPV4_IPV6_UDP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1b7], fail
+			      1, 6, 41); //[1b7], fail
 }
 
 static int
@@ -883,7 +883,7 @@ IPV4_IPV6_UDP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1b6], fail
+			      1, 5, 39); //[1b6], fail
 }
 
 static int
@@ -893,7 +893,7 @@ PORT_IPV6_UDP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1b5], fail
+			      1, 5, 41); //[1b5], fail
 }
 
 static int
@@ -902,7 +902,7 @@ IPV6_UDP_SCTP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1b4], fail
+			      1, 4, 39); //[1b4], fail
 }
 
 static int
@@ -949,7 +949,7 @@ PORT_IPV4_IPV6_TCP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1af], fail
+			      1, 6, 41); //[1af], fail
 }
 
 static int
@@ -959,7 +959,7 @@ IPV4_IPV6_TCP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1ae], fail
+			      1, 5, 39); //[1ae], fail
 }
 
 static int
@@ -969,7 +969,7 @@ PORT_IPV6_TCP_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1ad], fail
+			      1, 5, 41); //[1ad], fail
 }
 
 static int
@@ -978,7 +978,7 @@ IPV6_TCP_SCTP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1ac], fail
+			      1, 4, 39); //[1ac], fail
 }
 
 static int
@@ -1025,7 +1025,7 @@ PORT_IPV4_IPV6_SCTP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1a7], fail
+			      1, 6, 41); //[1a7], fail
 }
 
 static int
@@ -1034,7 +1034,7 @@ IPV4_IPV6_SCTP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV4|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1a6], fail
+			      1, 5, 39); //[1a6], fail
 }
 
 static int
@@ -1043,7 +1043,7 @@ PORT_IPV6_SCTP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1a5], fail
+			      1, 5, 41); //[1a5], fail
 }
 
 static int
@@ -1052,7 +1052,7 @@ IPV6_SCTP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[1a4], fail
+			      1, 4, 39); //[1a4], fail
 }
 
 static int
@@ -1097,7 +1097,7 @@ PORT_IPV4_IPV6_TCP_UDP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[19f], fail
+			      1, 6, 41); //[19f], fail
 }
 
 static int
@@ -1107,7 +1107,7 @@ IPV4_IPV6_TCP_UDP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[19e], fail
+			      1, 5, 39); //[19e], fail
 }
 
 static int
@@ -1117,7 +1117,7 @@ PORT_IPV6_TCP_UDP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[19d], fail
+			      1, 5, 41); //[19d], fail
 }
 
 static int
@@ -1126,7 +1126,7 @@ IPV6_TCP_UDP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[19c], fail
+			      1, 4, 39); //[19c], fail
 }
 
 static int
@@ -1173,7 +1173,7 @@ PORT_IPV4_IPV6_UDP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[197], fail
+			      1, 6, 41); //[197], fail
 }
 
 static int
@@ -1182,7 +1182,7 @@ IPV4_IPV6_UDP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV4|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[196], fail
+			      1, 5, 39); //[196], fail
 }
 
 static int
@@ -1191,7 +1191,7 @@ PORT_IPV6_UDP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[195], fail
+			      1, 5, 41); //[195], fail
 }
 
 static int
@@ -1200,7 +1200,7 @@ IPV6_UDP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[194], fail
+			      1, 4, 39); //[194], fail
 }
 
 static int
@@ -1245,7 +1245,7 @@ PORT_IPV4_IPV6_TCP_VXLAN_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[18f], fail
+			      1, 6, 41); //[18f], fail
 }
 
 static int
@@ -1254,7 +1254,7 @@ IPV4_IPV6_TCP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV4|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[18e], fail
+			      1, 5, 39); //[18e], fail
 }
 
 static int
@@ -1263,7 +1263,7 @@ PORT_IPV6_TCP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[18d], fail
+			      1, 5, 41); //[18d], fail
 }
 
 static int
@@ -1272,7 +1272,7 @@ IPV6_TCP_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[18c], fail
+			      1, 4, 39); //[18c], fail
 }
 
 static int
@@ -1316,7 +1316,7 @@ PORT_IPV4_IPV6_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_VXLAN|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[187], fail
+			      0, 5, 37); //[187], would pass!!
 }
 
 static int
@@ -1334,7 +1334,7 @@ PORT_IPV6_VXLAN_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_VXLAN|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[185], fail
+			      0, 4, 37); //[185], would pass!!
 }
 
 static int
@@ -1386,7 +1386,7 @@ PORT_IPV4_IPV6_TCP_UDP_SCTP_NVGRE_GENEVE(void)
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[17f], fail
+			      1, 6, 41); //[17f], fail
 }
 
 static int
@@ -1396,7 +1396,7 @@ IPV4_IPV6_TCP_UDP_SCTP_NVGRE_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[17e], fail
+			      1, 5, 39); //[17e], fail
 }
 
 static int
@@ -1406,7 +1406,7 @@ PORT_IPV6_TCP_UDP_SCTP_NVGRE_GENEVE(void)
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_TCP|
 			      FLOW_KEY_TYPE_UDP|FLOW_KEY_TYPE_SCTP|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[17d], fail
+			      1, 5, 41); //[17d], fail
 }
 
 static int
@@ -1416,7 +1416,7 @@ IPV6_TCP_UDP_SCTP_NVGRE_GENEVE(void)
 			      FLOW_KEY_TYPE_TCP|FLOW_KEY_TYPE_UDP|
 			      FLOW_KEY_TYPE_SCTP|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[17c], fail
+			      1, 4, 39); //[17c], fail
 }
 
 static int
@@ -1908,7 +1908,7 @@ PORT_IPV4_IPV6_NVGRE_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[147], fail
+			      0, 5, 37); //[147], would pass!!
 }
 
 static int
@@ -1926,7 +1926,7 @@ PORT_IPV6_NVGRE_GENEVE(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_GENEVE,
-			      1, 5, 42); //[145], fail
+			      0, 4, 37); //[145], would pass!!
 }
 
 static int
@@ -3060,7 +3060,7 @@ PORT_IPV4_IPV6_NVGRE_VXLAN(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV4|FLOW_KEY_TYPE_IPV6|
 			      FLOW_KEY_TYPE_NVGRE|FLOW_KEY_TYPE_VXLAN,
-			      1, 5, 42); //[c7], fail
+			      0, 5, 37); //[c7], would pass!!
 }
 
 static int
@@ -3078,7 +3078,7 @@ PORT_IPV6_NVGRE_VXLAN(void)
 	return result_checker(FLOW_KEY_TYPE_PORT|
 			      FLOW_KEY_TYPE_IPV6|FLOW_KEY_TYPE_NVGRE|
 			      FLOW_KEY_TYPE_VXLAN,
-			      1, 5, 42); //[c5], fail
+			      0, 4, 37); //[c5], would pass!!
 }
 
 static int
