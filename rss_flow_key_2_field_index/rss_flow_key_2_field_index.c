@@ -149,12 +149,11 @@ set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 			if (key_type == FLOW_KEY_TYPE_TCP && valid_key) {
 				field->ltype_match |= NPC_LT_LD_TCP;
 				group_member = true;
-			}
-			else if (key_type == FLOW_KEY_TYPE_UDP && valid_key) {
+			} else if (key_type == FLOW_KEY_TYPE_UDP && valid_key) {
 				field->ltype_match |= NPC_LT_LD_UDP;
 				group_member = true;
-			}
-			else if (key_type == FLOW_KEY_TYPE_SCTP && valid_key) {
+			} else if (key_type == FLOW_KEY_TYPE_SCTP
+								&& valid_key) {
 				field->ltype_match |= NPC_LT_LD_SCTP;
 				group_member = true;
 			}
