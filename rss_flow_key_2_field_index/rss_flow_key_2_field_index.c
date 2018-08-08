@@ -93,6 +93,14 @@ set_flowkey_fields(struct nix_rx_flowkey_alg *alg, uint32_t flow_cfg)
 	 * If a different definition or combination needed then NPC MCAM
 	 * has to be programmed to filter such pkts and it's action should
 	 * point to this definition to calculate flowtag or hash.
+	 *
+	 * The `for loop` goes over _all_ protocol field and the following
+	 * variables depicts the state machine forward progress logic.
+	 *
+	 * keyoff_marker - Enabled when hash byte length needs to be accounted
+	 * in field->key_offset update.
+	 * field_marker - Enabled when a new field needs to be selected.
+	 * group_member - Enabled when protocol is part of a group.
 	 */
 
 	keyoff_marker = 0; max_key_off = 0; group_member = 0;
