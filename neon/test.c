@@ -13,10 +13,10 @@ void print128_u32_num(uint32x4_t var)
            val[3], val[2], val[1], val[0]);
 }
 
-void print128_u16_num(uint64x2_t var)
+void print128_u16_num(uint16x8_t var)
 {
 	uint16_t *val = (uint16_t*) &var;
-	printf("u16: %2llxx %2lxx %2llx %2llx %2llx %2llx %2llx %2llx\n",
+	printf("u16: %x %x %x %x %x %x %x %x\n",
            val[7], val[6], val[5], val[4], val[3], val[2],
            val[1], val[0]);
 }
@@ -50,10 +50,9 @@ void init(void)
 {
 	ptr_array[0] = 0x0001020304050607;
 	ptr_array[1] = 0x08090a0b0c0d0e0f;
-
 }
 
-
+#if 0
 void vshlq_u32_test(void)
 {
 	uint32x4_t new;
@@ -66,10 +65,33 @@ void vshlq_u32_test(void)
 	print128_u32_num((uint32x4_t)(len_shl));
 	print128_u32_num(new);
 }
+#endif
+
+void x(void)
+{
+	uint16x8_t x = {1, 2, 3, 4, 5, 6, 7, 8};
+	uint64x2_t x64;
+	uint32_t sig;
+
+	print128_u16_num(x);
+
+	x64 = vpaddlq_u32(vpaddlq_u16(x));
+
+	print128_num(x64);
+
+	sig = (uint32_t)(vgetq_lane_u64(x64, 0) + vgetq_lane_u64(x64, 1));
+
+	printf("sig=%x\n", sig);
+
+	sig = (uint32_t)(vaddvq_u16(x));
+	printf("sig=%x\n", sig);
+}
 
 int main()
 {
 	init();
-	vshlq_u32_test();
+
+	x();
+
 	return 0;
 }
